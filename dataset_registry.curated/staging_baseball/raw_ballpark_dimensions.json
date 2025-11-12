@@ -1,189 +1,189 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "MLBAM venue identifier.",
       "dtype": "int8",
       "name": "venue_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Official ballpark name.",
       "dtype": "text",
       "name": "venue_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "StatsAPI link for expanded venue information.",
       "dtype": "text",
       "name": "venue_link",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "True if the venue is currently active in MLB scheduling data.",
       "dtype": "bool",
       "name": "is_active",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Street address line 1.",
       "dtype": "text",
       "name": "address_1",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "City name.",
       "dtype": "text",
       "name": "city",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Full state Name.",
       "dtype": "text",
       "name": "state",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "State abbreviation.",
       "dtype": "text",
       "name": "state_abbrev",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Postal/ZIP code.",
       "dtype": "text",
       "name": "postal_code",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Country name.",
       "dtype": "text",
       "name": "country",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Main ballpark phone number.",
       "dtype": "text",
       "name": "phone",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "The angular distance north or south from the equator of a point on the earth'ssurface, measured on the meridian of the point.",
       "dtype": "float8",
       "name": "latitude",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "The angular distance measured on a great circle of reference from the intersection ofthe adopted zero meridian with this reference circle to the similar intersection of themeridian passing through the object.",
       "dtype": "float8",
       "name": "longitude",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Azimuth orientation in degrees (0° = due north) for home plate to center field.",
       "dtype": "float8",
       "name": "azimuth_angle",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Venue elevation above sea level in feet.",
       "dtype": "float8",
       "name": "elevation_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Seating capacity reported by MLB.",
       "dtype": "float8",
       "name": "capacity",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Playing surface material (grass, artificial, hybrid).",
       "dtype": "text",
       "name": "turf_type",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Roof configuration (open, retractable, dome).",
       "dtype": "text",
       "name": "roof_type",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet from home plate down the left-field line.",
       "dtype": "float8",
       "name": "left_line_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet to the power alley in left field.",
       "dtype": "float8",
       "name": "left_field_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet to left-center field.",
       "dtype": "float8",
       "name": "left_center_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet to straightaway center field.",
       "dtype": "float8",
       "name": "center_field_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet to right-center field.",
       "dtype": "float8",
       "name": "right_center_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet to the right-field power alley.",
       "dtype": "float8",
       "name": "right_field_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Distance in feet from home plate down the right-field line.",
       "dtype": "float8",
       "name": "right_line_ft",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Time zone identifier used by MLB scheduling (e.g., America/New_York).",
       "dtype": "text",
       "name": "timezone_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Time zone offset from UTC in hours for the venue.",
       "dtype": "int8",
       "name": "timezone_offset_utc",
       "nullable": true,
@@ -191,9 +191,11 @@
     }
   ],
   "dataset_id": "staging_baseball.raw_ballpark_dimensions",
-  "description": "",
+  "description": "Static metadata for MLB ballparks: address, geography, capacity, surface/roof type, and foul-line/power-alley distances sourced from the StatsAPI venue feed.",
   "name": "Raw Ballpark Dimensions",
-  "primary_key": [],
+  "primary_key": [
+    "venue_id"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "raw_ballpark_dimensions"

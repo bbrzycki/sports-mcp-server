@@ -1,161 +1,161 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "MLB club label associated with the venue/year.",
       "dtype": "text",
       "name": "Team",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ballpark name for the park-factor row.",
       "dtype": "text",
       "name": "Venue",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season year covered by the park factors.",
       "dtype": "text",
       "name": "Year",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Overall Statcast park factor index (100 = neutral +/\u2212 favors hitters/pitchers).",
       "dtype": "int8",
       "name": "Park Factor",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "wOBA on contact park factor (actual).",
       "dtype": "int8",
       "name": "wOBACon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA on contact park factor.",
       "dtype": "float8",
       "name": "xwOBACon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average on contact park factor.",
       "dtype": "int8",
       "name": "BACON",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected batting average on contact park factor.",
       "dtype": "float8",
       "name": "xBACON",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hard-hit percentage park factor.",
       "dtype": "float8",
       "name": "HardHit",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs-scored park factor.",
       "dtype": "int8",
       "name": "R",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "On-base percentage park factor.",
       "dtype": "int8",
       "name": "OBP",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for h.",
       "dtype": "int8",
       "name": "H",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Single rate park factor.",
       "dtype": "int8",
       "name": "1B",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Double rate park factor.",
       "dtype": "int8",
       "name": "2B",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triple rate park factor.",
       "dtype": "int8",
       "name": "3B",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home run rate park factor.",
       "dtype": "int8",
       "name": "HR",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b b.",
       "dtype": "int8",
       "name": "BB",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for s o.",
       "dtype": "int8",
       "name": "SO",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for p a.",
       "dtype": "int8",
       "name": "PA",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Side field from marts_baseball.savant_park_factors.",
       "dtype": "text",
       "name": "side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sky condition. https://statsapi.mlb.com/api/v1/sky",
       "dtype": "text",
       "name": "condition",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for rolling.",
       "dtype": "int8",
       "name": "rolling",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for most recent year.",
       "dtype": "int8",
       "name": "most_recent_year",
       "nullable": true,
@@ -163,9 +163,12 @@
     }
   ],
   "dataset_id": "marts_baseball.savant_park_factors",
-  "description": "",
+  "description": "Park factor table derived from Baseball Savant that normalizes Statcast outcomes by venue, handedness, and batted-ball type.",
   "name": "Savant Park Factors",
-  "primary_key": [],
+  "primary_key": [
+    "venue_id",
+    "season"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "savant_park_factors"

@@ -1,1575 +1,1575 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "StatsAPI game primary key identifying the contest.",
       "dtype": "int8",
       "name": "game_pk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Game type code (regular season, postseason, spring, etc.).",
       "dtype": "text",
       "name": "type",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubleheader flag (Y = same-day twin bill, N = single, S = split-ticket).",
       "dtype": "text",
       "name": "double_header",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB string identifier (e.g., YYYYMMDD away@home code).",
       "dtype": "text",
       "name": "id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Legacy Gameday feed type used for configuration.",
       "dtype": "text",
       "name": "gameday_type",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Indicates whether the game is a postseason tiebreaker.",
       "dtype": "text",
       "name": "tiebreaker",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Game number used to distinguish doubleheaders (1 or 2).",
       "dtype": "int8",
       "name": "game_number",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Internal calendar-event identifier for scheduling systems.",
       "dtype": "text",
       "name": "calendar_event_i_d",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season year the game belongs to.",
       "dtype": "int4",
       "name": "season",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season label formatted for display (e.g., \"2024\").",
       "dtype": "text",
       "name": "season_display",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Scheduled first-pitch timestamp in local time.",
       "dtype": "timestamp",
       "name": "date_time",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Originally scheduled date prior to postponements.",
       "dtype": "date",
       "name": "original_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Official MLB date of record (used for standings).",
       "dtype": "date",
       "name": "official_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Day/night classification for the scheduled start.",
       "dtype": "text",
       "name": "day_night",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Scheduled first-pitch clock time (local).",
       "dtype": "text",
       "name": "time",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "AM/PM indicator paired with the scheduled time.",
       "dtype": "text",
       "name": "ampm",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Weather conditions string reported at first pitch.",
       "dtype": "text",
       "name": "condition",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Game-time temperature in degrees Fahrenheit.",
       "dtype": "text",
       "name": "temp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Wind direction/speed string at first pitch.",
       "dtype": "text",
       "name": "wind",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Official paid attendance for the game.",
       "dtype": "int8",
       "name": "attendance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Timestamp of the actual first pitch.",
       "dtype": "timestamp",
       "name": "first_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Elapsed game duration in minutes.",
       "dtype": "int8",
       "name": "game_duration_minutes",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Verbose MLB game status (e.g., \"Final/9\", \"Postponed\").",
       "dtype": "text",
       "name": "detailed_state",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Compact MLB status code (e.g., F, PPD).",
       "dtype": "text",
       "name": "status_code",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM venue identifier hosting the game.",
       "dtype": "int8",
       "name": "venue_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ballpark name.",
       "dtype": "text",
       "name": "venue_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home club MLBAM team identifier.",
       "dtype": "int8",
       "name": "home_team_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home club display name.",
       "dtype": "text",
       "name": "home_team_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away club MLBAM team identifier.",
       "dtype": "int8",
       "name": "away_team_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away club display name.",
       "dtype": "text",
       "name": "away_team_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home team runs in the final line score.",
       "dtype": "int8",
       "name": "final_home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away team runs in the final line score.",
       "dtype": "int8",
       "name": "final_away_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home team hits total in the final line score.",
       "dtype": "int8",
       "name": "final_home_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away team hits total in the final line score.",
       "dtype": "int8",
       "name": "final_away_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home team errors in the final line score.",
       "dtype": "int8",
       "name": "final_home_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away team errors in the final line score.",
       "dtype": "int8",
       "name": "final_away_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home team runners left on base.",
       "dtype": "int8",
       "name": "final_home_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away team runners left on base.",
       "dtype": "int8",
       "name": "final_away_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball outs recorded by the home team offense.",
       "dtype": "int8",
       "name": "home_batting_fly_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs recorded by the home team offense.",
       "dtype": "int8",
       "name": "home_batting_ground_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Air outs (fly or line drives) recorded against the home team offense.",
       "dtype": "int8",
       "name": "home_batting_air_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs scored by the home team offense.",
       "dtype": "int8",
       "name": "home_batting_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles hit by the home team.",
       "dtype": "int8",
       "name": "home_batting_doubles",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples hit by the home team.",
       "dtype": "int8",
       "name": "home_batting_triples",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs hit by the home team.",
       "dtype": "int8",
       "name": "home_batting_home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts taken by the home team batters.",
       "dtype": "int8",
       "name": "home_batting_strike_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks drawn by the home team.",
       "dtype": "int8",
       "name": "home_batting_base_on_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional walks awarded to the home team.",
       "dtype": "int8",
       "name": "home_batting_intentional_walks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits recorded by the home team offense.",
       "dtype": "int8",
       "name": "home_batting_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Times the home team batters were hit by pitch.",
       "dtype": "int8",
       "name": "home_batting_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average (hits divided by at-bats) for the home team.",
       "dtype": "text",
       "name": "home_batting_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "At-bats taken by the home team offense.",
       "dtype": "int8",
       "name": "home_batting_at_bats",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "On-base percentage for the home team offense.",
       "dtype": "text",
       "name": "home_batting_obp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Slugging percentage for the home team offense.",
       "dtype": "text",
       "name": "home_batting_slg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "OPS (OBP + SLG) for the home team offense.",
       "dtype": "text",
       "name": "home_batting_ops",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Caught-stealing events against Home baserunners.",
       "dtype": "int8",
       "name": "home_batting_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases successfully taken by the home team.",
       "dtype": "int8",
       "name": "home_batting_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen-base success rate for the home team.",
       "dtype": "text",
       "name": "home_batting_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-double-play events by the home team.",
       "dtype": "int8",
       "name": "home_batting_ground_into_double_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-triple-play events by the home team.",
       "dtype": "int8",
       "name": "home_batting_ground_into_triple_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Plate appearances logged by the home team.",
       "dtype": "int8",
       "name": "home_batting_plate_appearances",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total bases accrued by the home team.",
       "dtype": "int8",
       "name": "home_batting_total_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs batted in credited to the home team.",
       "dtype": "int8",
       "name": "home_batting_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners left on base by the home team.",
       "dtype": "int8",
       "name": "home_batting_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice bunts laid down by the home team.",
       "dtype": "int8",
       "name": "home_batting_sac_bunts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice flies hit by the home team.",
       "dtype": "int8",
       "name": "home_batting_sac_flies",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Times Home batters reached on catcher interference.",
       "dtype": "int8",
       "name": "home_batting_catchers_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runners picked off by the defense.",
       "dtype": "int8",
       "name": "home_batting_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average at-bats per home run for the home team.",
       "dtype": "text",
       "name": "home_batting_at_bats_per_home_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Popups converted into outs against the home team offense.",
       "dtype": "int8",
       "name": "home_batting_pop_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive outs recorded against the home team offense.",
       "dtype": "int8",
       "name": "home_batting_line_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball outs recorded by the home team pitching staff.",
       "dtype": "int8",
       "name": "home_pitching_fly_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs recorded by the home team pitching staff.",
       "dtype": "int8",
       "name": "home_pitching_ground_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Air outs recorded by the home team pitching staff.",
       "dtype": "int8",
       "name": "home_pitching_air_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_doubles",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_triples",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts recorded by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_strike_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks issued by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_base_on_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional walks issued by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_intentional_walks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hit-by-pitch events issued by the home team.",
       "dtype": "int8",
       "name": "home_pitching_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent at-bats faced by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_at_bats",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent on-base percentage against the home team.",
       "dtype": "text",
       "name": "home_pitching_obp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponents caught stealing by the home team battery.",
       "dtype": "int8",
       "name": "home_pitching_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases allowed by the home team battery.",
       "dtype": "int8",
       "name": "home_pitching_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent stolen-base success rate versus the home team.",
       "dtype": "text",
       "name": "home_pitching_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_number_of_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned run average for the home team staff.",
       "dtype": "text",
       "name": "home_pitching_era",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Innings pitched by the home team staff.",
       "dtype": "text",
       "name": "home_pitching_innings_pitched",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Save opportunities presented to the home team.",
       "dtype": "int8",
       "name": "home_pitching_save_opportunities",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned runs allowed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_earned_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks plus hits per inning pitched for the home team.",
       "dtype": "text",
       "name": "home_pitching_whip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batters faced by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_batters_faced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total outs recorded by the home team pitching staff.",
       "dtype": "int8",
       "name": "home_pitching_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Complete games thrown by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_complete_games",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Shutouts credited to the home team staff.",
       "dtype": "int8",
       "name": "home_pitching_shutouts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown (including all pitchers) for the home team.",
       "dtype": "int8",
       "name": "home_pitching_pitches_thrown",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ball calls thrown by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikes thrown by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_strikes",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strike percentage for the home team pitching staff.",
       "dtype": "text",
       "name": "home_pitching_strike_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batters hit by pitch by the home team.",
       "dtype": "int8",
       "name": "home_pitching_hit_batsmen",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Balks committed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_balks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Wild pitches charged to the home team.",
       "dtype": "int8",
       "name": "home_pitching_wild_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoffs executed by the home team pitchers.",
       "dtype": "int8",
       "name": "home_pitching_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-out to air-out ratio for the home team pitchers.",
       "dtype": "text",
       "name": "home_pitching_ground_outs_to_airouts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs batted in charged to the home team pitching staff.",
       "dtype": "int8",
       "name": "home_pitching_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average pitches per inning for the home team staff.",
       "dtype": "text",
       "name": "home_pitching_pitches_per_inning",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs allowed per nine innings by the home pitching staff.",
       "dtype": "text",
       "name": "home_pitching_runs_scored_per9",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed per nine innings by the home staff.",
       "dtype": "text",
       "name": "home_pitching_home_runs_per9",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners for home team relievers.",
       "dtype": "int8",
       "name": "home_pitching_inherited_runners",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners who scored after entering.",
       "dtype": "int8",
       "name": "home_pitching_inherited_runners_scored",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Catcher interference calls charged to the home team.",
       "dtype": "int8",
       "name": "home_pitching_catchers_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice bunts given up by the home team defense.",
       "dtype": "int8",
       "name": "home_pitching_sac_bunts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice flies given up by the home team defense.",
       "dtype": "int8",
       "name": "home_pitching_sac_flies",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Passed balls charged to the home team catchers.",
       "dtype": "int8",
       "name": "home_pitching_passed_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Popups converted into outs by the home team defense.",
       "dtype": "int8",
       "name": "home_pitching_pop_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line drives converted into outs by the home team defense.",
       "dtype": "int8",
       "name": "home_pitching_line_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home defense catching runners attempting to steal.",
       "dtype": "int8",
       "name": "home_fielding_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases allowed against the home team defense.",
       "dtype": "int8",
       "name": "home_fielding_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent stolen-base success versus the home team.",
       "dtype": "text",
       "name": "home_fielding_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Defensive assists recorded by the home team.",
       "dtype": "int8",
       "name": "home_fielding_assists",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Putouts recorded by the home team.",
       "dtype": "int8",
       "name": "home_fielding_put_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors charged to the home team.",
       "dtype": "int8",
       "name": "home_fielding_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total defensive chances handled by the home team.",
       "dtype": "int8",
       "name": "home_fielding_chances",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Passed balls charged to Home catchers.",
       "dtype": "int8",
       "name": "home_fielding_passed_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoffs executed by the home team defense.",
       "dtype": "int8",
       "name": "home_fielding_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball outs recorded by the away team offense.",
       "dtype": "int8",
       "name": "away_batting_fly_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs recorded by the away team offense.",
       "dtype": "int8",
       "name": "away_batting_ground_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Air outs (fly or line drives) recorded against the away team offense.",
       "dtype": "int8",
       "name": "away_batting_air_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs scored by the away team offense.",
       "dtype": "int8",
       "name": "away_batting_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles hit by the away team.",
       "dtype": "int8",
       "name": "away_batting_doubles",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples hit by the away team.",
       "dtype": "int8",
       "name": "away_batting_triples",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs hit by the away team.",
       "dtype": "int8",
       "name": "away_batting_home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts taken by the away team batters.",
       "dtype": "int8",
       "name": "away_batting_strike_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks drawn by the away team.",
       "dtype": "int8",
       "name": "away_batting_base_on_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional walks awarded to the away team.",
       "dtype": "int8",
       "name": "away_batting_intentional_walks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits recorded by the away team offense.",
       "dtype": "int8",
       "name": "away_batting_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Times the away team batters were hit by pitch.",
       "dtype": "int8",
       "name": "away_batting_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average (hits divided by at-bats) for the away team.",
       "dtype": "text",
       "name": "away_batting_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "At-bats taken by the away team offense.",
       "dtype": "int8",
       "name": "away_batting_at_bats",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "On-base percentage for the away team offense.",
       "dtype": "text",
       "name": "away_batting_obp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Slugging percentage for the away team offense.",
       "dtype": "text",
       "name": "away_batting_slg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "OPS (OBP + SLG) for the away team offense.",
       "dtype": "text",
       "name": "away_batting_ops",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Caught-stealing events against Away baserunners.",
       "dtype": "int8",
       "name": "away_batting_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases successfully taken by the away team.",
       "dtype": "int8",
       "name": "away_batting_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen-base success rate for the away team.",
       "dtype": "text",
       "name": "away_batting_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-double-play events by the away team.",
       "dtype": "int8",
       "name": "away_batting_ground_into_double_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-triple-play events by the away team.",
       "dtype": "int8",
       "name": "away_batting_ground_into_triple_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Plate appearances logged by the away team.",
       "dtype": "int8",
       "name": "away_batting_plate_appearances",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total bases accrued by the away team.",
       "dtype": "int8",
       "name": "away_batting_total_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs batted in credited to the away team.",
       "dtype": "int8",
       "name": "away_batting_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners left on base by the away team.",
       "dtype": "int8",
       "name": "away_batting_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice bunts laid down by the away team.",
       "dtype": "int8",
       "name": "away_batting_sac_bunts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice flies hit by the away team.",
       "dtype": "int8",
       "name": "away_batting_sac_flies",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Times Away batters reached on catcher interference.",
       "dtype": "int8",
       "name": "away_batting_catchers_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away runners picked off by the defense.",
       "dtype": "int8",
       "name": "away_batting_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average at-bats per home run for the away team.",
       "dtype": "text",
       "name": "away_batting_at_bats_per_home_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Popups converted into outs against the away team offense.",
       "dtype": "int8",
       "name": "away_batting_pop_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive outs recorded against the away team offense.",
       "dtype": "int8",
       "name": "away_batting_line_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball outs recorded by the away team pitching staff.",
       "dtype": "int8",
       "name": "away_pitching_fly_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs recorded by the away team pitching staff.",
       "dtype": "int8",
       "name": "away_pitching_ground_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Air outs recorded by the away team pitching staff.",
       "dtype": "int8",
       "name": "away_pitching_air_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_doubles",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_triples",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts recorded by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_strike_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks issued by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_base_on_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional walks issued by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_intentional_walks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hit-by-pitch events issued by the away team.",
       "dtype": "int8",
       "name": "away_pitching_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent at-bats faced by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_at_bats",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent on-base percentage against the away team.",
       "dtype": "text",
       "name": "away_pitching_obp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponents caught stealing by the away team battery.",
       "dtype": "int8",
       "name": "away_pitching_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases allowed by the away team battery.",
       "dtype": "int8",
       "name": "away_pitching_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent stolen-base success rate versus the away team.",
       "dtype": "text",
       "name": "away_pitching_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_number_of_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned run average for the away team staff.",
       "dtype": "text",
       "name": "away_pitching_era",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Innings pitched by the away team staff.",
       "dtype": "text",
       "name": "away_pitching_innings_pitched",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Save opportunities presented to the away team.",
       "dtype": "int8",
       "name": "away_pitching_save_opportunities",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned runs allowed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_earned_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks plus hits per inning pitched for the away team.",
       "dtype": "text",
       "name": "away_pitching_whip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batters faced by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_batters_faced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total outs recorded by the away team pitching staff.",
       "dtype": "int8",
       "name": "away_pitching_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Complete games thrown by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_complete_games",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Shutouts credited to the away team staff.",
       "dtype": "int8",
       "name": "away_pitching_shutouts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown (including all pitchers) for the away team.",
       "dtype": "int8",
       "name": "away_pitching_pitches_thrown",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ball calls thrown by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_balls",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikes thrown by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_strikes",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strike percentage for the away team pitching staff.",
       "dtype": "text",
       "name": "away_pitching_strike_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batters hit by pitch by the away team.",
       "dtype": "int8",
       "name": "away_pitching_hit_batsmen",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Balks committed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_balks",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Wild pitches charged to the away team.",
       "dtype": "int8",
       "name": "away_pitching_wild_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoffs executed by the away team pitchers.",
       "dtype": "int8",
       "name": "away_pitching_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-out to air-out ratio for the away team pitchers.",
       "dtype": "text",
       "name": "away_pitching_ground_outs_to_airouts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs batted in charged to the away team pitching staff.",
       "dtype": "int8",
       "name": "away_pitching_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average pitches per inning for the away team staff.",
       "dtype": "text",
       "name": "away_pitching_pitches_per_inning",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs allowed per nine innings by the away pitching staff.",
       "dtype": "text",
       "name": "away_pitching_runs_scored_per9",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed per nine innings by the away staff.",
       "dtype": "text",
       "name": "away_pitching_home_runs_per9",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners for away team relievers.",
       "dtype": "int8",
       "name": "away_pitching_inherited_runners",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners who scored after entering.",
       "dtype": "int8",
       "name": "away_pitching_inherited_runners_scored",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Catcher interference calls charged to the away team.",
       "dtype": "int8",
       "name": "away_pitching_catchers_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice bunts given up by the away team defense.",
       "dtype": "int8",
       "name": "away_pitching_sac_bunts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice flies given up by the away team defense.",
       "dtype": "int8",
       "name": "away_pitching_sac_flies",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Passed balls charged to the away team catchers.",
       "dtype": "int8",
       "name": "away_pitching_passed_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Popups converted into outs by the away team defense.",
       "dtype": "int8",
       "name": "away_pitching_pop_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line drives converted into outs by the away team defense.",
       "dtype": "int8",
       "name": "away_pitching_line_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away defense catching runners attempting to steal.",
       "dtype": "int8",
       "name": "away_fielding_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases allowed against the away team defense.",
       "dtype": "int8",
       "name": "away_fielding_stolen_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent stolen-base success versus the away team.",
       "dtype": "text",
       "name": "away_fielding_stolen_base_percentage",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Defensive assists recorded by the away team.",
       "dtype": "int8",
       "name": "away_fielding_assists",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Putouts recorded by the away team.",
       "dtype": "int8",
       "name": "away_fielding_put_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors charged to the away team.",
       "dtype": "int8",
       "name": "away_fielding_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total defensive chances handled by the away team.",
       "dtype": "int8",
       "name": "away_fielding_chances",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Passed balls charged to Away catchers.",
       "dtype": "int8",
       "name": "away_fielding_passed_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoffs executed by the away team defense.",
       "dtype": "int8",
       "name": "away_fielding_pickoffs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Length of any in-game delay (rain, etc.) in minutes.",
       "dtype": "float8",
       "name": "delay_duration_minutes",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Date the game resumed after a suspension (if applicable).",
       "dtype": "date",
       "name": "resume_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Timestamp when play resumed after a suspension.",
       "dtype": "timestamp",
       "name": "resume_date_time",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Original date of the suspended portion being resumed.",
       "dtype": "date",
       "name": "resumed_from_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Timestamp of the source game segment the resumption references.",
       "dtype": "timestamp",
       "name": "resumed_from_date_time",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Calendar month number for reporting (1-12).",
       "dtype": "int4",
       "name": "month",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Calendar day of month (1-31).",
       "dtype": "int4",
       "name": "day",
       "nullable": true,
@@ -1577,9 +1577,11 @@
     }
   ],
   "dataset_id": "staging_baseball.raw_game_summaries",
-  "description": "",
+  "description": "Flattened GUMBO/StatsAPI game feed summarizing scheduling context, weather, venue, line scores, and aggregate batting/pitching/fielding stats for both clubs in a single record.",
   "name": "Raw Game Summaries",
-  "primary_key": [],
+  "primary_key": [
+    "game_pk"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "raw_game_summaries"

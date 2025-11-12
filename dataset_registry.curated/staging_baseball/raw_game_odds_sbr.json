@@ -1,91 +1,91 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "StatsAPI game identifier shared with the odds snapshot.",
       "dtype": "int8",
       "name": "game_pk",
       "nullable": false,
       "units": null
     },
     {
-      "description": "",
+      "description": "Local date for the listed matchup (YYYY-MM-DD).",
       "dtype": "date",
       "name": "game_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB season year (e.g., 2023).",
       "dtype": "int4",
       "name": "season",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "SportsbookReview team abbreviation for the home club.",
       "dtype": "text",
       "name": "home_team_abbr",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "SportsbookReview abbreviation for the visiting club.",
       "dtype": "text",
       "name": "away_team_abbr",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home score when the odds snapshot was reconciled (usually final).",
       "dtype": "int4",
       "name": "home_score",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away score when the odds snapshot was reconciled.",
       "dtype": "int4",
       "name": "away_score",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "SportsbookReview moneyline price for the home team (American odds).",
       "dtype": "int4",
       "name": "home_moneyline",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "SportsbookReview moneyline price for the road team (American odds).",
       "dtype": "int4",
       "name": "away_moneyline",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runline spread (typically -1.5 / +1.5).",
       "dtype": "float8",
       "name": "home_runline",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away runline spread.",
       "dtype": "float8",
       "name": "away_runline",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "American-odds payout for the home runline.",
       "dtype": "int4",
       "name": "home_runline_odds",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "American-odds payout for the away runline.",
       "dtype": "int4",
       "name": "away_runline_odds",
       "nullable": true,
@@ -93,9 +93,11 @@
     }
   ],
   "dataset_id": "staging_baseball.raw_game_odds_sbr",
-  "description": "",
+  "description": "Moneyline and runline prices scraped from SportsbookReview (SBR) for each MLB matchup, keyed by StatsAPI game id.",
   "name": "Raw Game Odds Sbr",
-  "primary_key": [],
+  "primary_key": [
+    "game_pk"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "raw_game_odds_sbr"

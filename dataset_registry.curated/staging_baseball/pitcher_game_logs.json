@@ -1,119 +1,119 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "Fly-ball outs recorded by the pitcher (includes popups and sacrifice flies caught for outs).",
       "dtype": "int8",
       "name": "air_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned runs charged to the pitcher in this appearance.",
       "dtype": "int8",
       "name": "earned_runs_allowed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Local date of the game (YYYY-MM-DD).",
       "dtype": "date",
       "name": "game_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB StatsAPI game primary key (unique per contest).",
       "dtype": "int8",
       "name": "game_pk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs induced by the pitcher.",
       "dtype": "int8",
       "name": "ground_outs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of opposing batters hit by a pitch.",
       "dtype": "int8",
       "name": "hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of hits allowed.",
       "dtype": "int8",
       "name": "hits_allowed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of home runs allowed.",
       "dtype": "int8",
       "name": "home_runs_allowed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Official innings pitched string reported by MLB (e.g., \"5.2\" meaning 5 innings + 2 outs).",
       "dtype": "text",
       "name": "innings_pitched",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Indicates whether is starter.",
       "dtype": "bool",
       "name": "is_starter",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of outs pitched.",
       "dtype": "int8",
       "name": "outs_pitched",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM pitcher identifier (integer).",
       "dtype": "int8",
       "name": "pitcher_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of runs allowed.",
       "dtype": "int8",
       "name": "runs_allowed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of strikeouts.",
       "dtype": "int8",
       "name": "strikeouts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM club identifier.",
       "dtype": "int8",
       "name": "team_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of walks allowed.",
       "dtype": "int8",
       "name": "walks_allowed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "True if the pitcher was charged with a run-from-inherited (RFI) situation.",
       "dtype": "bool",
       "name": "was_rfi_allowed",
       "nullable": true,
@@ -121,9 +121,12 @@
     }
   ],
   "dataset_id": "staging_baseball.pitcher_game_logs",
-  "description": "",
+  "description": "One record per pitcher appearance from the StatsAPI game log, including outs by batted-ball type, innings pitched, runs, hits, walks, and whether the outing was as a starter.",
   "name": "Pitcher Game Logs",
-  "primary_key": [],
+  "primary_key": [
+    "game_pk",
+    "pitcher_id"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "pitcher_game_logs"

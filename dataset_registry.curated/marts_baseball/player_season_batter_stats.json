@@ -1,1330 +1,1330 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "Batter full name as surfaced in Statcast exports.",
       "dtype": "text",
       "name": "player_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM player identifier for the batter.",
       "dtype": "int8",
       "name": "player_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season year tied to the stat line.",
       "dtype": "int8",
       "name": "year",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Internal Baseball Savant season key (mirrors year).",
       "dtype": "int8",
       "name": "yearhidden",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Baseball-Reference style seasonal age (age on June 30).",
       "dtype": "int8",
       "name": "player_age",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Official at-bats.",
       "dtype": "int8",
       "name": "ab",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Plate appearances.",
       "dtype": "int8",
       "name": "pa",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total hits (1B + 2B + 3B + HR).",
       "dtype": "int8",
       "name": "hit",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Singles recorded.",
       "dtype": "int8",
       "name": "single",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles recorded.",
       "dtype": "int8",
       "name": "double",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples recorded.",
       "dtype": "int8",
       "name": "triple",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs hit.",
       "dtype": "int8",
       "name": "home_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts recorded.",
       "dtype": "int8",
       "name": "strikeout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks (bases on balls).",
       "dtype": "int8",
       "name": "walk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts divided by plate appearances (K%).",
       "dtype": "float8",
       "name": "k_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks divided by plate appearances (BB%).",
       "dtype": "float8",
       "name": "bb_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average (AVG = hits / AB).",
       "dtype": "float8",
       "name": "batting_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Slugging percentage (total bases per AB).",
       "dtype": "float8",
       "name": "slg_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "On-base percentage (OBP).",
       "dtype": "float8",
       "name": "on_base_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "On-base plus slugging (OPS).",
       "dtype": "float8",
       "name": "on_base_plus_slg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Isolated power (ISO = SLG \u2212 AVG).",
       "dtype": "float8",
       "name": "isolated_power",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average on balls in play.",
       "dtype": "float8",
       "name": "babip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected batting average derived from exit velo + launch angle.",
       "dtype": "float8",
       "name": "xba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected slugging percentage from Statcast contact quality.",
       "dtype": "float8",
       "name": "xslg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Weighted on-base average (wOBA).",
       "dtype": "float8",
       "name": "woba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA from Statcast.",
       "dtype": "float8",
       "name": "xwoba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected on-base percentage.",
       "dtype": "float8",
       "name": "xobp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected isolated power.",
       "dtype": "float8",
       "name": "xiso",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "wOBA on contact (balls put in play only).",
       "dtype": "float8",
       "name": "wobacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA on contact.",
       "dtype": "float8",
       "name": "xwobacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average on contact (hits / balls in play).",
       "dtype": "float8",
       "name": "bacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected batting average on contact.",
       "dtype": "float8",
       "name": "xbacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected BA minus actual BA.",
       "dtype": "float8",
       "name": "xbadiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected SLG minus actual SLG.",
       "dtype": "float8",
       "name": "xslgdiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA minus actual wOBA.",
       "dtype": "float8",
       "name": "wobadiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average exit velocity on all tracked batted balls (mph).",
       "dtype": "float8",
       "name": "exit_velocity_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average launch angle (degrees).",
       "dtype": "float8",
       "name": "launch_angle_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of batted balls hit between 8\u00b0 and 32\u00b0 (\u201csweet spot\u201d).",
       "dtype": "float8",
       "name": "sweet_spot_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of batted balls meeting Statcast barrel criteria.",
       "dtype": "int8",
       "name": "barrel",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Barrels divided by total batted balls.",
       "dtype": "float8",
       "name": "barrel_batted_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of balls classified as solid contact.",
       "dtype": "float8",
       "name": "solidcontact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of flares/burners (soft opposite liners).",
       "dtype": "float8",
       "name": "flareburner_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of batted balls classified as undercut/under.",
       "dtype": "float8",
       "name": "poorlyunder_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of topped balls.",
       "dtype": "float8",
       "name": "poorlytopped_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of weak contact balls.",
       "dtype": "float8",
       "name": "poorlyweak_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of batted balls hit 95+ mph.",
       "dtype": "float8",
       "name": "hard_hit_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average per-game max exit velocity (\u201cbest speed\u201d).",
       "dtype": "float8",
       "name": "avg_best_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average \u201chyper-speed\u201d metric (peak EV/launch sample).",
       "dtype": "float8",
       "name": "avg_hyper_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swing rate at pitches inside the strike zone.",
       "dtype": "float8",
       "name": "z_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Miss rate on swings at pitches inside the zone.",
       "dtype": "float8",
       "name": "z_swing_miss_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swing rate at pitches outside the zone.",
       "dtype": "float8",
       "name": "oz_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Miss rate on swings outside the zone.",
       "dtype": "float8",
       "name": "oz_swing_miss_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Contact rate when swinging at pitches outside the zone.",
       "dtype": "float8",
       "name": "oz_contact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total swings-and-misses outside the zone.",
       "dtype": "int8",
       "name": "out_zone_swing_miss",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total swings at pitches outside the zone.",
       "dtype": "int8",
       "name": "out_zone_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of pitches seen outside the strike zone.",
       "dtype": "float8",
       "name": "out_zone_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of pitches seen outside the zone.",
       "dtype": "int8",
       "name": "out_zone",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swing rate on Statcast-defined \u201cmeatball\u201d pitches.",
       "dtype": "float8",
       "name": "meatball_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of pitches seen that were in the heart-middle bins.",
       "dtype": "float8",
       "name": "meatball_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Off-speed pitches seen (changeups, splitters, etc.).",
       "dtype": "int8",
       "name": "pitch_count_offspeed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fastballs seen.",
       "dtype": "int8",
       "name": "pitch_count_fastball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Breaking balls seen.",
       "dtype": "int8",
       "name": "pitch_count_breaking",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches seen over the season.",
       "dtype": "int8",
       "name": "pitch_count",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Contact rate when swinging at pitches in the zone.",
       "dtype": "float8",
       "name": "iz_contact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swings-and-misses inside the zone.",
       "dtype": "int8",
       "name": "in_zone_swing_miss",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swings at pitches inside the zone.",
       "dtype": "int8",
       "name": "in_zone_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of pitches seen in the zone.",
       "dtype": "float8",
       "name": "in_zone_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of pitches seen in the strike zone.",
       "dtype": "int8",
       "name": "in_zone",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of pitches on the Statcast \u201cedge\u201d band.",
       "dtype": "float8",
       "name": "edge_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of edge-location pitches.",
       "dtype": "int8",
       "name": "edge",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Overall whiff rate (swing-and-miss / swings).",
       "dtype": "float8",
       "name": "whiff_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Overall swing rate (swings / pitches).",
       "dtype": "float8",
       "name": "swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of batted balls pulled.",
       "dtype": "float8",
       "name": "pull_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of batted balls hit to center.",
       "dtype": "float8",
       "name": "straightaway_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of batted balls hit to the opposite field.",
       "dtype": "float8",
       "name": "opposite_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total number of tracked batted-ball events.",
       "dtype": "int8",
       "name": "batted_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "First-pitch strike rate.",
       "dtype": "float8",
       "name": "f_strike_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball percentage.",
       "dtype": "float8",
       "name": "groundballs_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground balls put in play.",
       "dtype": "int8",
       "name": "groundballs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball percentage.",
       "dtype": "float8",
       "name": "flyballs_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly balls put in play.",
       "dtype": "int8",
       "name": "flyballs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive percentage.",
       "dtype": "float8",
       "name": "linedrives_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line drives put in play.",
       "dtype": "int8",
       "name": "linedrives",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pop-up percentage.",
       "dtype": "float8",
       "name": "popups_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pop-ups put in play.",
       "dtype": "int8",
       "name": "popups",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average swing length measured by bat sensors (feet).",
       "dtype": "float8",
       "name": "avg_swing_length",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average swing speed in miles per hour.",
       "dtype": "float8",
       "name": "avg_swing_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of \u201cblast\u201d contact events (elite barrels).",
       "dtype": "float8",
       "name": "blasts_contact",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Blast rate per swing.",
       "dtype": "float8",
       "name": "blasts_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of squared-up balls (ideal EV + angle).",
       "dtype": "float8",
       "name": "squared_up_contact",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Squared-up rate per swing.",
       "dtype": "float8",
       "name": "squared_up_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of awkward \u201csword\u201d swings logged.",
       "dtype": "float8",
       "name": "swords",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of swings above Statcast\u2019s fast-speed threshold.",
       "dtype": "float8",
       "name": "fast_swing_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average bat attack angle (degrees).",
       "dtype": "float8",
       "name": "attack_angle",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal spray direction (degrees).",
       "dtype": "float8",
       "name": "attack_direction",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of swings producing ideal launch angles.",
       "dtype": "float8",
       "name": "ideal_angle_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical swing-path tilt.",
       "dtype": "float8",
       "name": "vertical_swing_path",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total pa.",
       "dtype": "int8",
       "name": "b_total_pa",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of b rbi.",
       "dtype": "int8",
       "name": "b_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b lob.",
       "dtype": "int8",
       "name": "b_lob",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total bases.",
       "dtype": "int8",
       "name": "b_total_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r total caught stealing.",
       "dtype": "int8",
       "name": "r_total_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r total stolen base.",
       "dtype": "int8",
       "name": "r_total_stolen_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b ab scoring.",
       "dtype": "int8",
       "name": "b_ab_scoring",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b ball.",
       "dtype": "int8",
       "name": "b_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b called strike.",
       "dtype": "int8",
       "name": "b_called_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b catcher interf.",
       "dtype": "int8",
       "name": "b_catcher_interf",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b foul.",
       "dtype": "int8",
       "name": "b_foul",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b foul tip.",
       "dtype": "int8",
       "name": "b_foul_tip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b game.",
       "dtype": "int8",
       "name": "b_game",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b gnd into dp.",
       "dtype": "int8",
       "name": "b_gnd_into_dp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b gnd into tp.",
       "dtype": "int8",
       "name": "b_gnd_into_tp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b gnd rule double.",
       "dtype": "int8",
       "name": "b_gnd_rule_double",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit by pitch.",
       "dtype": "int8",
       "name": "b_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit ground.",
       "dtype": "int8",
       "name": "b_hit_ground",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit fly.",
       "dtype": "int8",
       "name": "b_hit_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit into play.",
       "dtype": "int8",
       "name": "b_hit_into_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit line drive.",
       "dtype": "int8",
       "name": "b_hit_line_drive",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b hit popup.",
       "dtype": "int8",
       "name": "b_hit_popup",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b out fly.",
       "dtype": "int8",
       "name": "b_out_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b out ground.",
       "dtype": "int8",
       "name": "b_out_ground",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b out line drive.",
       "dtype": "int8",
       "name": "b_out_line_drive",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b out popup.",
       "dtype": "int8",
       "name": "b_out_popup",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b intent ball.",
       "dtype": "int8",
       "name": "b_intent_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b intent walk.",
       "dtype": "int8",
       "name": "b_intent_walk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b interference.",
       "dtype": "int8",
       "name": "b_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b pinch hit.",
       "dtype": "int8",
       "name": "b_pinch_hit",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b pinch run.",
       "dtype": "int8",
       "name": "b_pinch_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b pitchout.",
       "dtype": "int8",
       "name": "b_pitchout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b played dh.",
       "dtype": "int8",
       "name": "b_played_dh",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b sac bunt.",
       "dtype": "int8",
       "name": "b_sac_bunt",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b sac fly.",
       "dtype": "int8",
       "name": "b_sac_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b swinging strike.",
       "dtype": "int8",
       "name": "b_swinging_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r caught stealing 2b.",
       "dtype": "int8",
       "name": "r_caught_stealing_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r caught stealing 3b.",
       "dtype": "int8",
       "name": "r_caught_stealing_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of r caught stealing home.",
       "dtype": "int8",
       "name": "r_caught_stealing_home",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r defensive indiff.",
       "dtype": "int8",
       "name": "r_defensive_indiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r interference.",
       "dtype": "int8",
       "name": "r_interference",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r pickoff 1b.",
       "dtype": "int8",
       "name": "r_pickoff_1b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r pickoff 2b.",
       "dtype": "int8",
       "name": "r_pickoff_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r pickoff 3b.",
       "dtype": "int8",
       "name": "r_pickoff_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r run.",
       "dtype": "int8",
       "name": "r_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r stolen base 2b.",
       "dtype": "int8",
       "name": "r_stolen_base_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r stolen base 3b.",
       "dtype": "int8",
       "name": "r_stolen_base_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of r stolen base home.",
       "dtype": "int8",
       "name": "r_stolen_base_home",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total ball.",
       "dtype": "int8",
       "name": "b_total_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total sacrifices.",
       "dtype": "int8",
       "name": "b_total_sacrifices",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total strike.",
       "dtype": "int8",
       "name": "b_total_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b total swinging strike.",
       "dtype": "int8",
       "name": "b_total_swinging_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of b total pitches.",
       "dtype": "int8",
       "name": "b_total_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of r stolen base.",
       "dtype": "float8",
       "name": "r_stolen_base_pct",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for r total pickoff.",
       "dtype": "int8",
       "name": "r_total_pickoff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b reached on error.",
       "dtype": "int8",
       "name": "b_reached_on_error",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b walkoff.",
       "dtype": "int8",
       "name": "b_walkoff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for b reached on int.",
       "dtype": "int8",
       "name": "b_reached_on_int",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for pop 2b sba count.",
       "dtype": "float8",
       "name": "pop_2b_sba_count",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for pop 2b sba.",
       "dtype": "float8",
       "name": "pop_2b_sba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of pop 2b sb.",
       "dtype": "float8",
       "name": "pop_2b_sb",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of pop 2b cs.",
       "dtype": "float8",
       "name": "pop_2b_cs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for pop 3b sba count.",
       "dtype": "float8",
       "name": "pop_3b_sba_count",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for pop 3b sba.",
       "dtype": "float8",
       "name": "pop_3b_sba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of pop 3b sb.",
       "dtype": "float8",
       "name": "pop_3b_sb",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of pop 3b cs.",
       "dtype": "float8",
       "name": "pop_3b_cs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for exchange 2b 3b sba.",
       "dtype": "float8",
       "name": "exchange_2b_3b_sba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for maxeff arm 2b 3b sba.",
       "dtype": "float8",
       "name": "maxeff_arm_2b_3b_sba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average (n outs above), hits divided by at-bats.",
       "dtype": "float8",
       "name": "n_outs_above_average",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n fieldout 5stars.",
       "dtype": "float8",
       "name": "n_fieldout_5stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n opp 5stars.",
       "dtype": "float8",
       "name": "n_opp_5stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of n 5star.",
       "dtype": "float8",
       "name": "n_5star_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n fieldout 4stars.",
       "dtype": "float8",
       "name": "n_fieldout_4stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n opp 4stars.",
       "dtype": "float8",
       "name": "n_opp_4stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of n 4star.",
       "dtype": "float8",
       "name": "n_4star_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n fieldout 3stars.",
       "dtype": "float8",
       "name": "n_fieldout_3stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n opp 3stars.",
       "dtype": "float8",
       "name": "n_opp_3stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of n 3star.",
       "dtype": "float8",
       "name": "n_3star_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n opp 2stars.",
       "dtype": "float8",
       "name": "n_opp_2stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of n 2star.",
       "dtype": "float8",
       "name": "n_2star_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n fieldout 2stars.",
       "dtype": "float8",
       "name": "n_fieldout_2stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of n 1star.",
       "dtype": "float8",
       "name": "n_1star_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n fieldout 1stars.",
       "dtype": "float8",
       "name": "n_fieldout_1stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n opp 1stars.",
       "dtype": "float8",
       "name": "n_opp_1stars",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for rel league reaction distance.",
       "dtype": "float8",
       "name": "rel_league_reaction_distance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for rel league burst distance.",
       "dtype": "float8",
       "name": "rel_league_burst_distance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for rel league routing distance.",
       "dtype": "float8",
       "name": "rel_league_routing_distance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for rel league bootup distance.",
       "dtype": "float8",
       "name": "rel_league_bootup_distance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for f bootup distance.",
       "dtype": "float8",
       "name": "f_bootup_distance",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for n bolts.",
       "dtype": "float8",
       "name": "n_bolts",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for hp to 1b.",
       "dtype": "float8",
       "name": "hp_to_1b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for sprint speed.",
       "dtype": "float8",
       "name": "sprint_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB season year (e.g., 2023).",
       "dtype": "int8",
       "name": "season",
       "nullable": true,
@@ -1332,9 +1332,12 @@
     }
   ],
   "dataset_id": "marts_baseball.player_season_batter_stats",
-  "description": "",
+  "description": "Seasonal batting summary per MLB player combining MLB StatsAPI totals and Statcast advanced quality-of-contact metrics.",
   "name": "Player Season Batter Stats",
-  "primary_key": [],
+  "primary_key": [
+    "player_id",
+    "season"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "player_season_batter_stats"

@@ -1,98 +1,98 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "StatsAPI game identifier for the contest.",
       "dtype": "int8",
       "name": "game_pk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ordinal inning number (1..9, extras as needed).",
       "dtype": "int8",
       "name": "inning_number",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Display-friendly ordinal label (\"1st\", \"2nd\", etc.).",
       "dtype": "text",
       "name": "ordinal_number",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
-      "dtype": "float8",
+      "description": "Home runs scored by the home club in this inning.",
+      "dtype": "int8",
       "name": "home_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits recorded by the home club in this inning.",
       "dtype": "int8",
       "name": "home_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors committed by the home club in this inning.",
       "dtype": "int8",
       "name": "home_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runners left on base after the inning closed.",
       "dtype": "int8",
       "name": "home_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
-      "dtype": "float8",
+      "description": "Runs scored by the away club in this inning.",
+      "dtype": "int8",
       "name": "away_runs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits recorded by the away club in this inning.",
       "dtype": "int8",
       "name": "away_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors committed by the away club in this inning.",
       "dtype": "int8",
       "name": "away_errors",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Away runners left stranded after the inning.",
       "dtype": "int8",
       "name": "away_left_on_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB season year (e.g., 2023).",
       "dtype": "int4",
       "name": "season",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for month.",
       "dtype": "int4",
       "name": "month",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Numeric value for day.",
       "dtype": "int4",
       "name": "day",
       "nullable": true,
@@ -100,9 +100,13 @@
     }
   ],
   "dataset_id": "staging_baseball.raw_game_inning_results",
-  "description": "",
+  "description": "Inning-by-inning home/away scoring, hits, errors, and men left on base as reported by the StatsAPI GUMBO feed.",
   "name": "Raw Game Inning Results",
-  "primary_key": [],
+  "primary_key": [
+    "game_pk",
+    "inning",
+    "half"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "raw_game_inning_results"

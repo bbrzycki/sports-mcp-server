@@ -1,35 +1,35 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "MLBAM club identifier.",
       "dtype": "int4",
       "name": "team_id",
       "nullable": false,
       "units": null
     },
     {
-      "description": "",
+      "description": "Canonical franchise display name (e.g., \"Chicago Cubs\").",
       "dtype": "text",
       "name": "franchise_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB StatsAPI three-letter team code.",
       "dtype": "text",
       "name": "teamCode",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB fileCode used in URLs/feeds (lowercase).",
       "dtype": "text",
       "name": "fileCode",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "First season the franchise played in MLB.",
       "dtype": "int4",
       "name": "firstYearOfPlay",
       "nullable": true,
@@ -37,9 +37,11 @@
     }
   ],
   "dataset_id": "marts_baseball.dim_franchise",
-  "description": "",
+  "description": "Reference list of MLB franchises and static identifiers pulled from the MLB StatsAPI franchise feed.",
   "name": "Dim Franchise",
-  "primary_key": [],
+  "primary_key": [
+    "team_id"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "dim_franchise"

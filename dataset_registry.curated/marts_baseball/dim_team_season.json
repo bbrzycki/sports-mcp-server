@@ -1,49 +1,49 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "MLBAM club identifier.",
       "dtype": "int4",
       "name": "team_id",
       "nullable": false,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB season year (e.g., 2023).",
       "dtype": "int4",
       "name": "season",
       "nullable": false,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season-specific display name for the club (includes city nickname).",
       "dtype": "text",
       "name": "team_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home venue (MLBAM venue_id) used for that season.",
       "dtype": "int4",
       "name": "venue_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB league id (103 = AL, 104 = NL).",
       "dtype": "int4",
       "name": "league_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB division id from StatsAPI (e.g., 201 for AL East).",
       "dtype": "int4",
       "name": "division_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season-specific team abbreviation (usually three letters).",
       "dtype": "text",
       "name": "abbreviation",
       "nullable": true,
@@ -51,9 +51,12 @@
     }
   ],
   "dataset_id": "marts_baseball.dim_team_season",
-  "description": "",
+  "description": "Season-level dimension for each MLB team with venue context and season metadata.",
   "name": "Dim Team Season",
-  "primary_key": [],
+  "primary_key": [
+    "team_id",
+    "season"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "dim_team_season"

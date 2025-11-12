@@ -1,12 +1,35 @@
 """MVP MCP-style data service that returns structured JSON slices."""
 from __future__ import annotations
 
+import json
+import os
+from pathlib import Path
 from typing import Any, Literal
 
+from dataclasses import dataclass
+
 from fastapi import FastAPI, HTTPException
+from psycopg import sql
+from psycopg_pool import ConnectionPool
+from psycopg.rows import dict_row
 from pydantic import BaseModel, Field
 
+CURATED_REGISTRY_DIR = Path(
+    os.getenv("DATASET_REGISTRY_DIR", "dataset_registry.curated")
+).resolve()
+POSTGRES_DSN = os.getenv(
+    "POSTGRES_DSN",
+    "dbname={db} user={user} password={password} host={host} port={port}".format(
+        db=os.getenv("PGDATABASE", "sports_dw_dev"),
+        user=os.getenv("PGUSER", "sports_admin"),
+        password=os.getenv("PGPASSWORD", "sports_admin_password"),
+        host=os.getenv("PGHOST", "localhost"),
+        port=os.getenv("PGPORT", "5432"),
+    ),
+)
+
 app = FastAPI(title="Sports MCP Server")
+POOL: ConnectionPool | None = None
 
 
 class DatasetColumn(BaseModel):
@@ -22,7 +45,7 @@ class DatasetMeta(BaseModel):
     description: str
     primary_key: list[str] = Field(default_factory=list)
     columns: list[DatasetColumn]
-    sample_size: int
+    sample_size: int | None = None
 
 
 class QueryFilter(BaseModel):
@@ -47,90 +70,63 @@ class DatasetSlice(BaseModel):
     data: list[dict[str, Any]]
 
 
-PITCHING_OUTINGS = [
-    {
-        "player_id": "mlb-660271",
-        "player_name": "Shohei Ohtani",
-        "game_date": "2021-04-04",
-        "season": 2021,
-        "earned_runs": 0,
-        "outs_recorded": 10,
-    },
-    {
-        "player_id": "mlb-660271",
-        "player_name": "Shohei Ohtani",
-        "game_date": "2021-04-12",
-        "season": 2021,
-        "earned_runs": 4,
-        "outs_recorded": 9,
-    },
-    {
-        "player_id": "mlb-660271",
-        "player_name": "Shohei Ohtani",
-        "game_date": "2022-04-07",
-        "season": 2022,
-        "earned_runs": 1,
-        "outs_recorded": 12,
-    },
-    {
-        "player_id": "mlb-593643",
-        "player_name": "Gerrit Cole",
-        "game_date": "2021-04-01",
-        "season": 2021,
-        "earned_runs": 2,
-        "outs_recorded": 15,
-    },
-]
+@dataclass
+class DatasetEntry:
+    meta: DatasetMeta
+    schema: str
+    table: str
+    column_names: set[str]
 
 
-DATASETS: dict[str, dict[str, Any]] = {
-    "pitching_outings": {
-        "meta": DatasetMeta(
-            dataset_id="pitching_outings",
-            name="Pitching Outings",
-            description=(
-                "One row per pitcher appearance with earned runs and outs recorded. "
-                "Stubbed sample data for agent development."
-            ),
-            primary_key=["player_id", "game_date"],
-            columns=[
-                DatasetColumn(
-                    name="player_id",
-                    dtype="string",
-                    description="Canonical pitcher identifier",
-                ),
-                DatasetColumn(
-                    name="player_name",
-                    dtype="string",
-                    description="Display name",
-                ),
-                DatasetColumn(
-                    name="game_date",
-                    dtype="date",
-                    description="Date of the appearance",
-                ),
-                DatasetColumn(
-                    name="season",
-                    dtype="int",
-                    description="Season year",
-                ),
-                DatasetColumn(
-                    name="earned_runs",
-                    dtype="int",
-                    description="Earned runs charged to the pitcher",
-                ),
-                DatasetColumn(
-                    name="outs_recorded",
-                    dtype="int",
-                    description="Number of outs recorded (3 = 1 IP)",
-                    units="outs",
-                ),
-            ],
-            sample_size=len(PITCHING_OUTINGS),
-        ),
-        "data": PITCHING_OUTINGS,
-    }
-}
+def _load_dataset_registry(directory: Path) -> dict[str, DatasetEntry]:
+    if not directory.exists():
+        raise RuntimeError(f"Dataset registry directory '{directory}' does not exist.")
+
+    registry: dict[str, DatasetEntry] = {}
+    for json_file in sorted(directory.rglob("*.json")):
+        payload = json.loads(json_file.read_text())
+        dataset_id = payload.get("dataset_id")
+        if not dataset_id:
+            raise RuntimeError(f"Dataset file '{json_file}' missing 'dataset_id'.")
+        schema = payload.get("schema")
+        table = payload.get("table")
+        if not schema or not table:
+            raise RuntimeError(f"Dataset '{dataset_id}' missing schema/table definitions.")
+
+        columns = [
+            DatasetColumn(**column) for column in payload.get("columns", [])
+        ]
+        if not columns:
+            raise RuntimeError(f"Dataset '{dataset_id}' must define at least one column.")
+
+        meta = DatasetMeta(
+            dataset_id=dataset_id,
+            name=payload.get("name", dataset_id),
+            description=payload.get("description", ""),
+            primary_key=payload.get("primary_key", []),
+            columns=columns,
+            sample_size=payload.get("sample_size"),
+        )
+        registry[dataset_id] = DatasetEntry(
+            meta=meta,
+            schema=schema,
+            table=table,
+            column_names={col.name for col in columns},
+        )
+
+    if not registry:
+        raise RuntimeError(f"No datasets were found under '{directory}'.")
+    return registry
+
+
+def _get_pool() -> ConnectionPool:
+    global POOL
+    if POOL is None:
+        POOL = ConnectionPool(POSTGRES_DSN)
+    return POOL
+
+
+DATASETS: dict[str, DatasetEntry] = _load_dataset_registry(CURATED_REGISTRY_DIR)
 
 
 @app.get("/healthz")
@@ -153,71 +149,106 @@ def describe_dataset(dataset_id: str) -> DatasetMeta:
 
 @app.post("/datasets/{dataset_id}/query", response_model=DatasetSlice)
 def query_dataset(dataset_id: str, query: DatasetQuery) -> DatasetSlice:
-    dataset = DATASETS.get(dataset_id)
-    if dataset is None:
+    entry = DATASETS.get(dataset_id)
+    if entry is None:
         raise HTTPException(status_code=404, detail="Dataset not found")
 
-    records: list[dict[str, Any]] = dataset["data"]
-    filtered = _apply_filters(records, query.filters)
-    projected = _apply_projection(filtered, query.columns)
+    selected_columns = _resolve_columns(entry, query.columns)
+    where_sql, params = _build_where_clause(query.filters, entry.column_names)
 
-    total = len(projected)
-    start = query.offset
-    end = min(start + query.limit, total)
-    if start > total:
-        page: list[dict[str, Any]] = []
-    else:
-        page = projected[start:end]
-
-    next_offset = end if end < total else None
-
+    total = _count_rows(entry, where_sql, params)
+    rows = _fetch_rows(entry, selected_columns, where_sql, params, query.limit, query.offset)
+    next_offset = query.offset + query.limit if query.offset + query.limit < total else None
     return DatasetSlice(
         dataset_id=dataset_id,
         total=total,
-        returned=len(page),
+        returned=len(rows),
         offset=query.offset,
         next_offset=next_offset,
-        data=page,
+        data=rows,
     )
 
 
-def _apply_filters(
-    rows: list[dict[str, Any]],
+def _resolve_columns(entry: DatasetEntry, requested: list[str] | None) -> list[str]:
+    available = [col.name for col in entry.meta.columns]
+    if not requested:
+        return available
+    unknown = [col for col in requested if col not in entry.column_names]
+    if unknown:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Columns {unknown} are not available on dataset '{entry.meta.dataset_id}'.",
+        )
+    return requested
+
+
+def _build_where_clause(
     filters: list[QueryFilter],
-) -> list[dict[str, Any]]:
+    allowed_columns: set[str],
+) -> tuple[sql.SQL, list[Any]]:
     if not filters:
-        return rows
+        return sql.SQL(""), []
 
-    def row_matches(row: dict[str, Any]) -> bool:
-        for f in filters:
-            value = row.get(f.column)
-            if value is None:
-                return False
-            if f.op == "eq":
-                if isinstance(value, str) and isinstance(f.value, str):
-                    lhs = _normalize_string(value)
-                    rhs = _normalize_string(f.value)
-                    if lhs != rhs:
-                        return False
-                elif value != f.value:
-                    return False
-            if f.op == "gte" and not value >= f.value:
-                return False
-            if f.op == "lte" and not value <= f.value:
-                return False
-        return True
+    op_map = {"eq": "=", "gte": ">=", "lte": "<="}
+    clauses: list[sql.SQL] = []
+    params: list[Any] = []
+    for fil in filters:
+        if fil.column not in allowed_columns:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Column '{fil.column}' cannot be used for filtering.",
+            )
+        operator = op_map[fil.op]
+        clauses.append(
+            sql.SQL("{} {} %s").format(
+                sql.Identifier(fil.column),
+                sql.SQL(operator),
+            )
+        )
+        params.append(fil.value)
 
-    return [row for row in rows if row_matches(row)]
-
-
-def _normalize_string(value: str) -> str:
-    return " ".join(value.replace(",", " ").lower().split())
+    clause_sql = sql.SQL(" AND ").join(clauses)
+    return sql.SQL(" WHERE ") + clause_sql, params
 
 
-def _apply_projection(
-    rows: list[dict[str, Any]],
-    columns: list[str] | None,
+def _count_rows(entry: DatasetEntry, where_sql: sql.SQL, params: list[Any]) -> int:
+    base = sql.SQL("SELECT COUNT(*) FROM {}.{}").format(
+        sql.Identifier(entry.schema),
+        sql.Identifier(entry.table),
+    )
+    query = base + where_sql
+    pool = _get_pool()
+    with pool.connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(query, params)
+            result = cur.fetchone()
+    return int(result[0]) if result else 0
+
+
+def _fetch_rows(
+    entry: DatasetEntry,
+    columns: list[str],
+    where_sql: sql.SQL,
+    params: list[Any],
+    limit: int,
+    offset: int,
 ) -> list[dict[str, Any]]:
-    if not columns:
-        return rows
-    return [{col: row.get(col) for col in columns} for row in rows]
+    select_clause = sql.SQL(", ").join(sql.Identifier(col) for col in columns)
+    base = sql.SQL("SELECT {} FROM {}.{}").format(
+        select_clause,
+        sql.Identifier(entry.schema),
+        sql.Identifier(entry.table),
+    )
+    order_sql = (
+        sql.SQL(" ORDER BY ")
+        + sql.SQL(", ").join(sql.Identifier(col) for col in entry.meta.primary_key)
+        if entry.meta.primary_key
+        else sql.SQL("")
+    )
+    query = base + where_sql + order_sql + sql.SQL(" LIMIT %s OFFSET %s")
+    values = list(params) + [limit, offset]
+    pool = _get_pool()
+    with pool.connection() as conn:
+        with conn.cursor(row_factory=dict_row) as cur:
+            cur.execute(query, values)
+            return cur.fetchall()

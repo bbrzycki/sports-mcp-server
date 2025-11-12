@@ -1,35 +1,35 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "Week start timestamp for the Google Trends sample.",
       "dtype": "timestamp",
       "name": "trend_date",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Google Trends interest (0-100) for the query \"baseball\" in the United States.",
       "dtype": "int8",
       "name": "baseball: (United States)",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Interest score for the query \"MLB\" in the United States.",
       "dtype": "int8",
       "name": "MLB: (United States)",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Interest score for \"World Series\" searches in the United States.",
       "dtype": "int8",
       "name": "World Series: (United States)",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Interest score for \"World Baseball Classic\" searches in the United States.",
       "dtype": "float8",
       "name": "World Baseball Classic: (United States)",
       "nullable": true,
@@ -37,9 +37,13 @@
     }
   ],
   "dataset_id": "marts_baseball.google_trends_interest",
-  "description": "",
+  "description": "Google Trends interest index captured for baseball-related queries (0-100 scale).",
   "name": "Google Trends Interest",
-  "primary_key": [],
+  "primary_key": [
+    "search_term",
+    "region",
+    "week_start_date"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "google_trends_interest"

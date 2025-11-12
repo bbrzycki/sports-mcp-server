@@ -1,287 +1,287 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 1.",
       "dtype": "int8",
       "name": "away_batter_1_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 1.",
       "dtype": "text",
       "name": "away_batter_1_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 2.",
       "dtype": "int8",
       "name": "away_batter_2_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 2.",
       "dtype": "text",
       "name": "away_batter_2_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 3.",
       "dtype": "int8",
       "name": "away_batter_3_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 3.",
       "dtype": "text",
       "name": "away_batter_3_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 4.",
       "dtype": "int8",
       "name": "away_batter_4_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 4.",
       "dtype": "text",
       "name": "away_batter_4_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 5.",
       "dtype": "int8",
       "name": "away_batter_5_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 5.",
       "dtype": "text",
       "name": "away_batter_5_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 6.",
       "dtype": "int8",
       "name": "away_batter_6_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 6.",
       "dtype": "text",
       "name": "away_batter_6_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 7.",
       "dtype": "int8",
       "name": "away_batter_7_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 7.",
       "dtype": "text",
       "name": "away_batter_7_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 8.",
       "dtype": "int8",
       "name": "away_batter_8_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 8.",
       "dtype": "text",
       "name": "away_batter_8_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the away team's batter in lineup spot 9.",
       "dtype": "int8",
       "name": "away_batter_9_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the away lineup spot 9.",
       "dtype": "text",
       "name": "away_batter_9_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the listed away starting pitcher.",
       "dtype": "int8",
       "name": "away_pitcher_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Throwing hand (R/L) for the away starting pitcher.",
       "dtype": "text",
       "name": "away_pitcher_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "StatsAPI game identifier.",
       "dtype": "int8",
       "name": "game_pk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 1.",
       "dtype": "int8",
       "name": "home_batter_1_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 1.",
       "dtype": "text",
       "name": "home_batter_1_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 2.",
       "dtype": "int8",
       "name": "home_batter_2_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 2.",
       "dtype": "text",
       "name": "home_batter_2_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 3.",
       "dtype": "int8",
       "name": "home_batter_3_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 3.",
       "dtype": "text",
       "name": "home_batter_3_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 4.",
       "dtype": "int8",
       "name": "home_batter_4_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 4.",
       "dtype": "text",
       "name": "home_batter_4_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 5.",
       "dtype": "int8",
       "name": "home_batter_5_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 5.",
       "dtype": "text",
       "name": "home_batter_5_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 6.",
       "dtype": "int8",
       "name": "home_batter_6_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 6.",
       "dtype": "text",
       "name": "home_batter_6_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 7.",
       "dtype": "int8",
       "name": "home_batter_7_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 7.",
       "dtype": "text",
       "name": "home_batter_7_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 8.",
       "dtype": "int8",
       "name": "home_batter_8_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 8.",
       "dtype": "text",
       "name": "home_batter_8_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the home team's batter in lineup spot 9.",
       "dtype": "int8",
       "name": "home_batter_9_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting handedness (R/L/S) for the home lineup spot 9.",
       "dtype": "text",
       "name": "home_batter_9_side",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM id for the listed home starting pitcher.",
       "dtype": "int8",
       "name": "home_pitcher_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Throwing hand (R/L) for the home starting pitcher.",
       "dtype": "text",
       "name": "home_pitcher_side",
       "nullable": true,
@@ -289,9 +289,13 @@
     }
   ],
   "dataset_id": "staging_baseball.starting_lineups",
-  "description": "",
+  "description": "Per-game batting order and pitcher assignments from the StatsAPI starting-lineup endpoint, covering both confirmed and projected lineups with handedness metadata.",
   "name": "Starting Lineups",
-  "primary_key": [],
+  "primary_key": [
+    "game_pk",
+    "team_id",
+    "batting_order"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "starting_lineups"

@@ -1,66 +1,68 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "Player surname from the Chadwick registry.",
       "dtype": "text",
       "name": "name_last",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Player given name.",
       "dtype": "text",
       "name": "name_first",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM person identifier (key_mlbam).",
       "dtype": "int8",
       "name": "key_mlbam",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Retrosheet player ID.",
       "dtype": "text",
       "name": "key_retro",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Baseball-Reference player identifier.",
       "dtype": "text",
       "name": "key_bbref",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "FanGraphs player identifier.",
       "dtype": "int8",
       "name": "key_fangraphs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
-      "dtype": "float8",
+      "description": "First MLB season played (year).",
+      "dtype": "int4",
       "name": "mlb_played_first",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
-      "dtype": "float8",
+      "description": "Most recent MLB season played (year).",
+      "dtype": "int4",
       "name": "mlb_played_last",
       "nullable": true,
       "units": null
     }
   ],
   "dataset_id": "staging_baseball.raw_chadwick_players",
-  "description": "",
+  "description": "Chadwick Bureau crosswalk of player identifiers (MLBAM, Retrosheet, Baseball-Reference, FanGraphs) with first/last names and MLB service years.",
   "name": "Raw Chadwick Players",
-  "primary_key": [],
+  "primary_key": [
+    "player_id"
+  ],
   "sample_size": null,
   "schema": "staging_baseball",
   "table": "raw_chadwick_players"

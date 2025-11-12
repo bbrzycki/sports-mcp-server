@@ -21,13 +21,13 @@ schemas/
 
 ## MVP status
 
-The current MVP ships a FastAPI service with a stubbed dataset registry:
+The service now loads every JSON spec under `dataset_registry.curated/`, exposes their metadata via:
 
-- `GET /datasets` — enumerate available datasets (currently `pitching_outings`).
-- `GET /datasets/{dataset_id}` — describe schema and metadata.
-- `POST /datasets/{dataset_id}/query` — return filtered, paginated rows (supports `eq`, `gte`, `lte` filters).
+- `GET /datasets` — enumerate available datasets (driven entirely by the curated registry).
+- `GET /datasets/{dataset_id}` — describe schema, columns, primary keys, and documentation.
+- `POST /datasets/{dataset_id}/query` — execute parameterised SQL (eq/gte/lte filters, column projection, limit/offset) against Postgres using those definitions.
 
-Sample data includes Shohei Ohtani and Gerrit Cole pitching outings so downstream agents can develop ERA-style analytics before the warehouse connectors are wired in.
+As soon as you add or edit a dataset JSON file and restart the server, the endpoints surface the new schema automatically—no more stubbed data living in the codebase.
 
 ### Dataset metadata scaffolding
 
@@ -50,6 +50,21 @@ The script connects using the usual `PG*` env vars (or CLI flags), enumerates ev
 - Columns with name + Postgres data type and blank description placeholders
 
 You can then fill in dataset/table descriptions, primary keys, and richer column docs directly in the generated file before wiring those datasets into the MCP server.
+
+### Auto-annotating curated tables
+
+After copying the tables you plan to expose into `dataset_registry.curated/`, run:
+
+```bash
+python scripts/annotate_registry.py
+```
+
+The annotator pulls the latest Baseball Savant CSV documentation plus a handful of heuristics to populate dataset descriptions, primary keys, and column blurbs (e.g., counts, percentages, IDs). Review and edit the output as needed, but it should give each dataset enough context for an LLM agent to reason about the available fields.
+
+### Runtime configuration
+
+- `DATASET_REGISTRY_DIR` (default `dataset_registry.curated`) — directory the API scans for dataset JSON specs.
+- `POSTGRES_DSN` — override the composed connection string if you prefer to supply a single DSN (otherwise the usual `PG*` env vars are read).
 
 ### Connecting to Postgres
 

@@ -1,2212 +1,2212 @@
 {
   "columns": [
     {
-      "description": "",
+      "description": "Pitcher full name as displayed in Statcast exports.",
       "dtype": "text",
       "name": "player_name",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLBAM pitcher identifier.",
       "dtype": "int8",
       "name": "player_id",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Season year tied to the stat line.",
       "dtype": "int8",
       "name": "year",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Internal Baseball Savant season key (mirrors year).",
       "dtype": "int8",
       "name": "yearhidden",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Seasonal age for the pitcher (age on June 30).",
       "dtype": "int8",
       "name": "player_age",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "At-bats faced (AB).",
       "dtype": "int8",
       "name": "ab",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Plate appearances faced.",
       "dtype": "int8",
       "name": "pa",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits allowed (1B + 2B + 3B + HR).",
       "dtype": "int8",
       "name": "hit",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Singles allowed.",
       "dtype": "int8",
       "name": "single",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles allowed.",
       "dtype": "int8",
       "name": "double",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples allowed.",
       "dtype": "int8",
       "name": "triple",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed.",
       "dtype": "int8",
       "name": "home_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts recorded.",
       "dtype": "int8",
       "name": "strikeout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks issued (BB).",
       "dtype": "int8",
       "name": "walk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeout percentage (K% = strikeouts / PA).",
       "dtype": "float8",
       "name": "k_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walk percentage (BB% = walks / PA).",
       "dtype": "float8",
       "name": "bb_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent batting average (hits / at-bats).",
       "dtype": "float8",
       "name": "batting_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent slugging percentage.",
       "dtype": "float8",
       "name": "slg_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent on-base percentage.",
       "dtype": "float8",
       "name": "on_base_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent OPS (OBP + SLG).",
       "dtype": "float8",
       "name": "on_base_plus_slg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent isolated power (ISO).",
       "dtype": "float8",
       "name": "isolated_power",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent BABIP (batting average on balls in play).",
       "dtype": "float8",
       "name": "babip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected batting average derived from exit velo + launch angle.",
       "dtype": "float8",
       "name": "xba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected slugging percentage from Statcast contact quality.",
       "dtype": "float8",
       "name": "xslg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Weighted on-base average (wOBA).",
       "dtype": "float8",
       "name": "woba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA from Statcast.",
       "dtype": "float8",
       "name": "xwoba",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected on-base percentage.",
       "dtype": "float8",
       "name": "xobp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected isolated power.",
       "dtype": "float8",
       "name": "xiso",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "wOBA on contact (balls put in play only).",
       "dtype": "float8",
       "name": "wobacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA on contact.",
       "dtype": "float8",
       "name": "xwobacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Batting average on contact (hits / balls in play).",
       "dtype": "float8",
       "name": "bacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected batting average on contact.",
       "dtype": "float8",
       "name": "xbacon",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected BA minus actual BA.",
       "dtype": "float8",
       "name": "xbadiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected SLG minus actual SLG.",
       "dtype": "float8",
       "name": "xslgdiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Expected wOBA minus actual wOBA.",
       "dtype": "float8",
       "name": "wobadiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent exit velocity on contact (mph).",
       "dtype": "float8",
       "name": "exit_velocity_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent launch angle in degrees.",
       "dtype": "float8",
       "name": "launch_angle_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent batted balls hit in the 8\u00b0-32\u00b0 \u201csweet spot.\u201d",
       "dtype": "float8",
       "name": "sweet_spot_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of barrels allowed.",
       "dtype": "int8",
       "name": "barrel",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percent of opponent batted balls that were barrels.",
       "dtype": "float8",
       "name": "barrel_batted_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent contact classified as solid.",
       "dtype": "float8",
       "name": "solidcontact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of flares/burners allowed.",
       "dtype": "float8",
       "name": "flareburner_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent contact that was undercut.",
       "dtype": "float8",
       "name": "poorlyunder_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent contact that was topped.",
       "dtype": "float8",
       "name": "poorlytopped_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of weak contact allowed.",
       "dtype": "float8",
       "name": "poorlyweak_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of opponent batted balls hit 95+ mph.",
       "dtype": "float8",
       "name": "hard_hit_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average of each game\u2019s top opponent exit velocity (\u201cbest speed\u201d).",
       "dtype": "float8",
       "name": "avg_best_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average high-end (\u201chyper\u201d) exit velocity allowed.",
       "dtype": "float8",
       "name": "avg_hyper_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent swing rate at pitches in the zone.",
       "dtype": "float8",
       "name": "z_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent miss rate on swings at in-zone pitches.",
       "dtype": "float8",
       "name": "z_swing_miss_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent swing rate at pitches outside the zone.",
       "dtype": "float8",
       "name": "oz_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent miss rate on swings outside the zone.",
       "dtype": "float8",
       "name": "oz_swing_miss_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent contact rate on swings outside the zone.",
       "dtype": "float8",
       "name": "oz_contact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total swings-and-misses generated outside the zone.",
       "dtype": "int8",
       "name": "out_zone_swing_miss",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total opponent swings at pitches outside the zone.",
       "dtype": "int8",
       "name": "out_zone_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of pitches located outside the strike zone.",
       "dtype": "float8",
       "name": "out_zone_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of pitches outside the strike zone.",
       "dtype": "int8",
       "name": "out_zone",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent swing rate on Statcast \u201cmeatball\u201d pitches.",
       "dtype": "float8",
       "name": "meatball_swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of pitches thrown in the heart-middle \u201cmeatball\u201d bin.",
       "dtype": "float8",
       "name": "meatball_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Off-speed pitches thrown.",
       "dtype": "int8",
       "name": "pitch_count_offspeed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fastballs thrown.",
       "dtype": "int8",
       "name": "pitch_count_fastball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Breaking balls thrown.",
       "dtype": "int8",
       "name": "pitch_count_breaking",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown.",
       "dtype": "int8",
       "name": "pitch_count",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent contact rate on swings inside the zone.",
       "dtype": "float8",
       "name": "iz_contact_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swings-and-misses induced in the zone.",
       "dtype": "int8",
       "name": "in_zone_swing_miss",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent swings at pitches in the zone.",
       "dtype": "int8",
       "name": "in_zone_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of pitches located inside the strike zone.",
       "dtype": "float8",
       "name": "in_zone_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of in-zone pitches thrown.",
       "dtype": "int8",
       "name": "in_zone",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Percentage of pitches located on the Statcast \u201cedge.\u201d",
       "dtype": "float8",
       "name": "edge_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Raw count of edge pitches.",
       "dtype": "int8",
       "name": "edge",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Overall whiff rate generated (swing-and-miss / swings).",
       "dtype": "float8",
       "name": "whiff_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Overall opponent swing rate.",
       "dtype": "float8",
       "name": "swing_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent batted balls pulled.",
       "dtype": "float8",
       "name": "pull_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent batted balls hit up the middle.",
       "dtype": "float8",
       "name": "straightaway_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent batted balls hit to the opposite field.",
       "dtype": "float8",
       "name": "opposite_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total tracked opponent batted balls.",
       "dtype": "int8",
       "name": "batted_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "First-pitch strike rate.",
       "dtype": "float8",
       "name": "f_strike_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball rate allowed.",
       "dtype": "float8",
       "name": "groundballs_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground balls allowed.",
       "dtype": "int8",
       "name": "groundballs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball rate allowed.",
       "dtype": "float8",
       "name": "flyballs_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly balls allowed.",
       "dtype": "int8",
       "name": "flyballs",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive rate allowed.",
       "dtype": "float8",
       "name": "linedrives_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line drives allowed.",
       "dtype": "int8",
       "name": "linedrives",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pop-up rate induced.",
       "dtype": "float8",
       "name": "popups_percent",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pop-ups induced.",
       "dtype": "int8",
       "name": "popups",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent swing length (Statcast bat-profiling).",
       "dtype": "float8",
       "name": "avg_swing_length",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent swing speed (mph).",
       "dtype": "float8",
       "name": "avg_swing_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of blast-quality contacts allowed.",
       "dtype": "float8",
       "name": "blasts_contact",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Blast rate per opponent swing.",
       "dtype": "float8",
       "name": "blasts_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of squared-up balls allowed.",
       "dtype": "float8",
       "name": "squared_up_contact",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Squared-up rate per opponent swing.",
       "dtype": "float8",
       "name": "squared_up_swing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Number of \u201csword\u201d swings induced.",
       "dtype": "float8",
       "name": "swords",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent swings classified as fast.",
       "dtype": "float8",
       "name": "fast_swing_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent bat attack angle vs this pitcher.",
       "dtype": "float8",
       "name": "attack_angle",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent spray direction vs this pitcher (degrees).",
       "dtype": "float8",
       "name": "attack_direction",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Share of opponent swings producing ideal launch angles.",
       "dtype": "float8",
       "name": "ideal_angle_rate",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average opponent swing-plane tilt vs this pitcher.",
       "dtype": "float8",
       "name": "vertical_swing_path",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Games pitched.",
       "dtype": "int8",
       "name": "p_game",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Plate appearances faced.",
       "dtype": "int8",
       "name": "p_total_pa",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "At-bats against.",
       "dtype": "int8",
       "name": "p_ab",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits allowed (all types).",
       "dtype": "int8",
       "name": "p_total_hits",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Singles allowed.",
       "dtype": "int8",
       "name": "p_single",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Doubles allowed.",
       "dtype": "int8",
       "name": "p_double",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Triples allowed.",
       "dtype": "int8",
       "name": "p_triple",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Home runs allowed.",
       "dtype": "int8",
       "name": "p_home_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Strikeouts recorded.",
       "dtype": "int8",
       "name": "p_strikeout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walks issued.",
       "dtype": "int8",
       "name": "p_walk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned runs allowed.",
       "dtype": "int8",
       "name": "p_earned_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total runs allowed.",
       "dtype": "int8",
       "name": "p_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Saves recorded.",
       "dtype": "int8",
       "name": "p_save",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Blown saves charged.",
       "dtype": "int8",
       "name": "p_blown_save",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Outs recorded.",
       "dtype": "int8",
       "name": "p_out",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Wins credited.",
       "dtype": "int8",
       "name": "p_win",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Losses charged.",
       "dtype": "int8",
       "name": "p_loss",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Wild pitches thrown.",
       "dtype": "int8",
       "name": "p_wild_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Balks committed.",
       "dtype": "int8",
       "name": "p_balk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Shutouts thrown.",
       "dtype": "int8",
       "name": "p_shutout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent batting average against this pitcher.",
       "dtype": "float8",
       "name": "p_opp_batting_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Opponent on-base percentage against this pitcher.",
       "dtype": "float8",
       "name": "p_opp_on_base_avg",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases allowed while pitching.",
       "dtype": "int8",
       "name": "p_total_stolen_base",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoff attempts to first base.",
       "dtype": "int8",
       "name": "p_pickoff_attempt_1b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoff attempts to second base.",
       "dtype": "int8",
       "name": "p_pickoff_attempt_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pickoff attempts to third base.",
       "dtype": "int8",
       "name": "p_pickoff_attempt_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Successful pickoffs at first base.",
       "dtype": "int8",
       "name": "p_pickoff_1b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Successful pickoffs at second base.",
       "dtype": "int8",
       "name": "p_pickoff_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Successful pickoffs at third base.",
       "dtype": "int8",
       "name": "p_pickoff_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners left on base when the inning ended (strand rate numerator).",
       "dtype": "int8",
       "name": "p_lob",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runs batted in credited to opponents while pitching.",
       "dtype": "int8",
       "name": "p_rbi",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases of second allowed.",
       "dtype": "int8",
       "name": "p_stolen_base_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Stolen bases of third allowed.",
       "dtype": "int8",
       "name": "p_stolen_base_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Steals of home plate allowed.",
       "dtype": "int8",
       "name": "p_stolen_base_home",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Quality starts recorded.",
       "dtype": "int8",
       "name": "p_quality_start",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Walk-off plate appearances allowed (ending the game).",
       "dtype": "int8",
       "name": "p_walkoff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average run support from the pitcher\u2019s offense per outing.",
       "dtype": "int8",
       "name": "p_run_support",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "At-bats with runners in scoring position faced.",
       "dtype": "int8",
       "name": "p_ab_scoring",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Automatic balls assessed (pitch clock/disengagement violations).",
       "dtype": "int8",
       "name": "p_automatic_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pitches called balls.",
       "dtype": "int8",
       "name": "p_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Called strikes thrown.",
       "dtype": "int8",
       "name": "p_called_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Catcher interference events while pitching.",
       "dtype": "int8",
       "name": "p_catcher_interf",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners caught stealing second with this pitcher.",
       "dtype": "int8",
       "name": "p_caught_stealing_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners caught stealing third with this pitcher.",
       "dtype": "int8",
       "name": "p_caught_stealing_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners caught stealing home with this pitcher.",
       "dtype": "int8",
       "name": "p_caught_stealing_home",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Complete games thrown.",
       "dtype": "int8",
       "name": "p_complete_game",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Advances on defensive indifference while pitching.",
       "dtype": "int8",
       "name": "p_defensive_indiff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Foul balls hit against the pitcher.",
       "dtype": "int8",
       "name": "p_foul",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Foul tips recorded.",
       "dtype": "int8",
       "name": "p_foul_tip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Games finished by the pitcher.",
       "dtype": "int8",
       "name": "p_game_finished",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Relief appearances.",
       "dtype": "int8",
       "name": "p_game_in_relief",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-double-play events induced.",
       "dtype": "int8",
       "name": "p_gnd_into_dp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Grounded-into-triple-play events induced.",
       "dtype": "int8",
       "name": "p_gnd_into_tp",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-rule doubles allowed.",
       "dtype": "int8",
       "name": "p_gnd_rule_double",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hit-by-pitch events issued.",
       "dtype": "int8",
       "name": "p_hit_by_pitch",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball hits allowed.",
       "dtype": "int8",
       "name": "p_hit_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball hits allowed.",
       "dtype": "int8",
       "name": "p_hit_ground",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive hits allowed.",
       "dtype": "int8",
       "name": "p_hit_line_drive",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Balls put into play against the pitcher.",
       "dtype": "int8",
       "name": "p_hit_into_play",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Hits allowed that produced at least one run.",
       "dtype": "int8",
       "name": "p_hit_scoring",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Holds recorded.",
       "dtype": "int8",
       "name": "p_hold",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional balls thrown prior to IBB.",
       "dtype": "int8",
       "name": "p_intent_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Intentional walks issued.",
       "dtype": "int8",
       "name": "p_intent_walk",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Missed bunt attempts by opponents.",
       "dtype": "int8",
       "name": "p_missed_bunt",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Fly-ball outs recorded.",
       "dtype": "int8",
       "name": "p_out_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Ground-ball outs recorded.",
       "dtype": "int8",
       "name": "p_out_ground",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Line-drive outs recorded.",
       "dtype": "int8",
       "name": "p_out_line_drive",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Passed balls charged to catchers with this pitcher.",
       "dtype": "int8",
       "name": "p_passed_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors on pickoff attempts to first.",
       "dtype": "int8",
       "name": "p_pickoff_error_1b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors on pickoff attempts to second.",
       "dtype": "int8",
       "name": "p_pickoff_error_2b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Errors on pickoff attempts to third.",
       "dtype": "int8",
       "name": "p_pickoff_error_3b",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pitchouts thrown.",
       "dtype": "int8",
       "name": "p_pitchout",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Relief appearances with zero outs recorded.",
       "dtype": "int8",
       "name": "p_relief_no_out",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice bunts allowed.",
       "dtype": "int8",
       "name": "p_sac_bunt",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Sacrifice flies allowed.",
       "dtype": "int8",
       "name": "p_sac_fly",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Games started.",
       "dtype": "int8",
       "name": "p_starting_p",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Swinging strikes induced.",
       "dtype": "int8",
       "name": "p_swinging_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Unearned runs allowed.",
       "dtype": "int8",
       "name": "p_unearned_run",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total balls thrown (including intentional).",
       "dtype": "int8",
       "name": "p_total_ball",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total bases allowed (TB).",
       "dtype": "int8",
       "name": "p_total_bases",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total caught-stealing plays converted.",
       "dtype": "int8",
       "name": "p_total_caught_stealing",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total successful pickoffs.",
       "dtype": "int8",
       "name": "p_total_pickoff",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pickoff attempts to any base.",
       "dtype": "int8",
       "name": "p_total_pickoff_attempt",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total errors committed on pickoff attempts.",
       "dtype": "int8",
       "name": "p_total_pickoff_error",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total pitches thrown.",
       "dtype": "int8",
       "name": "p_total_pitches",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total sacrifice bunts + flies allowed.",
       "dtype": "int8",
       "name": "p_total_sacrifices",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total strikes thrown.",
       "dtype": "int8",
       "name": "p_total_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total swinging strikes induced.",
       "dtype": "int8",
       "name": "p_total_swinging_strike",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners upon entering (reliever only).",
       "dtype": "int8",
       "name": "p_inh_runner",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Inherited runners who scored.",
       "dtype": "int8",
       "name": "p_inh_runner_scored",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Runners left on base when the pitcher exited (bequeathed).",
       "dtype": "int8",
       "name": "p_beq_runner",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Bequeathed runners that eventually scored.",
       "dtype": "int8",
       "name": "p_beq_runner_scored",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Times a batter reached on error with this pitcher fielding.",
       "dtype": "int8",
       "name": "p_reached_on_error",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Innings pitched formatted as #.# (outs).",
       "dtype": "float8",
       "name": "p_formatted_ip",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Earned run average (ERA).",
       "dtype": "float8",
       "name": "p_era",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Pitcher throwing hand (R or L).",
       "dtype": "text",
       "name": "pitch_hand",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Total Statcast-tracked pitches thrown.",
       "dtype": "int8",
       "name": "n",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of four-seam fastball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_ff_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the four-seam fastball in miles per hour.",
       "dtype": "float8",
       "name": "ff_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the four-seam fastball (rpm).",
       "dtype": "float8",
       "name": "ff_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the four-seam fastball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "ff_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the four-seam fastball in inches (positive = rise).",
       "dtype": "float8",
       "name": "ff_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the four-seam fastball in inches.",
       "dtype": "float8",
       "name": "ff_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the four-seam fastball in inches.",
       "dtype": "float8",
       "name": "ff_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the four-seam fastball (mph).",
       "dtype": "float8",
       "name": "ff_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of slider thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_sl_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the slider in miles per hour.",
       "dtype": "float8",
       "name": "sl_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the slider (rpm).",
       "dtype": "float8",
       "name": "sl_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the slider in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "sl_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the slider in inches (positive = rise).",
       "dtype": "float8",
       "name": "sl_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the slider in inches.",
       "dtype": "float8",
       "name": "sl_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the slider in inches.",
       "dtype": "float8",
       "name": "sl_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the slider (mph).",
       "dtype": "float8",
       "name": "sl_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of changeup thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_ch_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the changeup in miles per hour.",
       "dtype": "float8",
       "name": "ch_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the changeup (rpm).",
       "dtype": "float8",
       "name": "ch_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the changeup in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "ch_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the changeup in inches (positive = rise).",
       "dtype": "float8",
       "name": "ch_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the changeup in inches.",
       "dtype": "float8",
       "name": "ch_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the changeup in inches.",
       "dtype": "float8",
       "name": "ch_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the changeup (mph).",
       "dtype": "float8",
       "name": "ch_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of curveball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_cu_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the curveball in miles per hour.",
       "dtype": "float8",
       "name": "cu_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the curveball (rpm).",
       "dtype": "float8",
       "name": "cu_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the curveball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "cu_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the curveball in inches (positive = rise).",
       "dtype": "float8",
       "name": "cu_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the curveball in inches.",
       "dtype": "float8",
       "name": "cu_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the curveball in inches.",
       "dtype": "float8",
       "name": "cu_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the curveball (mph).",
       "dtype": "float8",
       "name": "cu_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of sinker thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_si_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the sinker in miles per hour.",
       "dtype": "float8",
       "name": "si_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the sinker (rpm).",
       "dtype": "float8",
       "name": "si_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the sinker in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "si_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the sinker in inches (positive = rise).",
       "dtype": "float8",
       "name": "si_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the sinker in inches.",
       "dtype": "float8",
       "name": "si_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the sinker in inches.",
       "dtype": "float8",
       "name": "si_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the sinker (mph).",
       "dtype": "float8",
       "name": "si_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of cutter thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_fc_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the cutter in miles per hour.",
       "dtype": "float8",
       "name": "fc_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the cutter (rpm).",
       "dtype": "float8",
       "name": "fc_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the cutter in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "fc_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the cutter in inches (positive = rise).",
       "dtype": "float8",
       "name": "fc_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the cutter in inches.",
       "dtype": "float8",
       "name": "fc_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the cutter in inches.",
       "dtype": "float8",
       "name": "fc_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the cutter (mph).",
       "dtype": "float8",
       "name": "fc_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of split-finger fastball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_fs_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the split-finger fastball in miles per hour.",
       "dtype": "float8",
       "name": "fs_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the split-finger fastball (rpm).",
       "dtype": "float8",
       "name": "fs_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the split-finger fastball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "fs_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the split-finger fastball in inches (positive = rise).",
       "dtype": "float8",
       "name": "fs_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the split-finger fastball in inches.",
       "dtype": "float8",
       "name": "fs_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the split-finger fastball in inches.",
       "dtype": "float8",
       "name": "fs_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the split-finger fastball (mph).",
       "dtype": "float8",
       "name": "fs_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of knuckleball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_kn_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the knuckleball in miles per hour.",
       "dtype": "float8",
       "name": "kn_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the knuckleball (rpm).",
       "dtype": "float8",
       "name": "kn_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the knuckleball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "kn_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the knuckleball in inches (positive = rise).",
       "dtype": "float8",
       "name": "kn_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the knuckleball in inches.",
       "dtype": "float8",
       "name": "kn_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the knuckleball in inches.",
       "dtype": "float8",
       "name": "kn_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the knuckleball (mph).",
       "dtype": "float8",
       "name": "kn_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of sweeper thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_st_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the sweeper in miles per hour.",
       "dtype": "float8",
       "name": "st_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the sweeper (rpm).",
       "dtype": "float8",
       "name": "st_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the sweeper in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "st_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the sweeper in inches (positive = rise).",
       "dtype": "float8",
       "name": "st_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the sweeper in inches.",
       "dtype": "float8",
       "name": "st_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the sweeper in inches.",
       "dtype": "float8",
       "name": "st_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the sweeper (mph).",
       "dtype": "float8",
       "name": "st_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of slurve thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_sv_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the slurve in miles per hour.",
       "dtype": "float8",
       "name": "sv_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the slurve (rpm).",
       "dtype": "float8",
       "name": "sv_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the slurve in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "sv_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the slurve in inches (positive = rise).",
       "dtype": "float8",
       "name": "sv_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the slurve in inches.",
       "dtype": "float8",
       "name": "sv_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the slurve in inches.",
       "dtype": "float8",
       "name": "sv_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the slurve (mph).",
       "dtype": "float8",
       "name": "sv_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of forkball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_fo_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the forkball in miles per hour.",
       "dtype": "float8",
       "name": "fo_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the forkball (rpm).",
       "dtype": "float8",
       "name": "fo_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the forkball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "fo_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the forkball in inches (positive = rise).",
       "dtype": "float8",
       "name": "fo_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the forkball in inches.",
       "dtype": "float8",
       "name": "fo_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the forkball in inches.",
       "dtype": "float8",
       "name": "fo_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the forkball (mph).",
       "dtype": "float8",
       "name": "fo_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of screwball thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_sc_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the screwball in miles per hour.",
       "dtype": "float8",
       "name": "sc_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the screwball (rpm).",
       "dtype": "float8",
       "name": "sc_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the screwball in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "sc_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the screwball in inches (positive = rise).",
       "dtype": "float8",
       "name": "sc_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the screwball in inches.",
       "dtype": "float8",
       "name": "sc_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the screwball in inches.",
       "dtype": "float8",
       "name": "sc_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the screwball (mph).",
       "dtype": "float8",
       "name": "sc_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of all fastballs thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_fastball_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the all fastballs in miles per hour.",
       "dtype": "float8",
       "name": "fastball_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the all fastballs (rpm).",
       "dtype": "float8",
       "name": "fastball_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the all fastballs in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "fastball_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the all fastballs in inches (positive = rise).",
       "dtype": "float8",
       "name": "fastball_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the all fastballs in inches.",
       "dtype": "float8",
       "name": "fastball_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the all fastballs in inches.",
       "dtype": "float8",
       "name": "fastball_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the all fastballs (mph).",
       "dtype": "float8",
       "name": "fastball_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of breaking balls thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_breaking_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the breaking balls in miles per hour.",
       "dtype": "float8",
       "name": "breaking_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the breaking balls (rpm).",
       "dtype": "float8",
       "name": "breaking_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the breaking balls in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "breaking_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the breaking balls in inches (positive = rise).",
       "dtype": "float8",
       "name": "breaking_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the breaking balls in inches.",
       "dtype": "float8",
       "name": "breaking_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the breaking balls in inches.",
       "dtype": "float8",
       "name": "breaking_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the breaking balls (mph).",
       "dtype": "float8",
       "name": "breaking_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Count of off-speed pitches thrown (Statcast pitch classification).",
       "dtype": "float8",
       "name": "n_offspeed_formatted",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average velocity of the off-speed pitches in miles per hour.",
       "dtype": "float8",
       "name": "offspeed_avg_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average spin rate of the off-speed pitches (rpm).",
       "dtype": "float8",
       "name": "offspeed_avg_spin",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average horizontal break of the off-speed pitches in inches (catcher view, positive arm-side).",
       "dtype": "float8",
       "name": "offspeed_avg_break_x",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average vertical break of the off-speed pitches in inches (positive = rise).",
       "dtype": "float8",
       "name": "offspeed_avg_break_z",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average induced vertical break (IVB) for the off-speed pitches in inches.",
       "dtype": "float8",
       "name": "offspeed_avg_break_z_induced",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average movement magnitude (combined break) for the off-speed pitches in inches.",
       "dtype": "float8",
       "name": "offspeed_avg_break",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Velocity range observed for the off-speed pitches (mph).",
       "dtype": "float8",
       "name": "offspeed_range_speed",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "Average arm-slot angle at release (degrees).",
       "dtype": "float8",
       "name": "arm_angle",
       "nullable": true,
       "units": null
     },
     {
-      "description": "",
+      "description": "MLB season year (e.g., 2023).",
       "dtype": "int8",
       "name": "season",
       "nullable": true,
@@ -2214,9 +2214,12 @@
     }
   ],
   "dataset_id": "marts_baseball.player_season_pitcher_stats",
-  "description": "",
+  "description": "Seasonal Statcast pitching profile: opponent results, inherited-run tracking, and pitch-type velocity/spin/break summaries for each MLB pitcher.",
   "name": "Player Season Pitcher Stats",
-  "primary_key": [],
+  "primary_key": [
+    "player_id",
+    "season"
+  ],
   "sample_size": null,
   "schema": "marts_baseball",
   "table": "player_season_pitcher_stats"
