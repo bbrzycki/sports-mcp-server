@@ -1,0 +1,858 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "pitch_type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "date",
+      "name": "game_date",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "release_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "release_pos_x",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "release_pos_z",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "player_name",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "batter",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitcher",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "events",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "description",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "spin_dir",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "spin_rate_deprecated",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "break_angle_deprecated",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "break_length_deprecated",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "zone",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "des",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "game_type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "stand",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "p_throws",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "home_team",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "away_team",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "hit_location",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "bb_type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "balls",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "strikes",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_year",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pfx_x",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pfx_z",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "plate_x",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "plate_z",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "on_3b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "on_2b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "on_1b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "outs_when_up",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "inning",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "inning_topbot",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "hc_x",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "hc_y",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "tfs_deprecated",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "tfs_zulu_deprecated",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "umpire",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "sv_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "vx0",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "vy0",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "vz0",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "ax",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "ay",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "az",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "sz_top",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "sz_bot",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "hit_distance_sc",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "launch_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "launch_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "effective_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "release_spin_rate",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "release_extension",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_pk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_2",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_3",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_4",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_5",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_6",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_7",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_8",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fielder_9",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "release_pos_y",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "estimated_ba_using_speedangle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "estimated_woba_using_speedangle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "woba_value",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "woba_denom",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "babip_value",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "iso_value",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "launch_speed_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "at_bat_number",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitch_number",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "pitch_name",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "away_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "bat_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "fld_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "post_away_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "post_home_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "post_bat_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "post_fld_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "if_fielding_alignment",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "of_fielding_alignment",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "spin_axis",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "delta_home_win_exp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "delta_run_exp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "bat_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "swing_length",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "estimated_slg_using_speedangle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "delta_pitcher_run_exp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "hyper_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_score_diff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "bat_score_diff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "home_win_exp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "bat_win_exp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "age_pit_legacy",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "age_bat_legacy",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "age_pit",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "age_bat",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "n_thruorder_pitcher",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "n_priorpa_thisgame_player_at_bat",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitcher_days_since_prev_game",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "batter_days_since_prev_game",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitcher_days_until_next_game",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "batter_days_until_next_game",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "api_break_z_with_gravity",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "api_break_x_arm",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "api_break_x_batter_in",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "arm_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "attack_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "attack_direction",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "swing_path_tilt",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "intercept_ball_minus_batter_pos_x_inches",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "intercept_ball_minus_batter_pos_y_inches",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "season",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "month",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "day",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.raw_pitch_logs",
+  "description": "",
+  "name": "Raw Pitch Logs",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "raw_pitch_logs"
+}

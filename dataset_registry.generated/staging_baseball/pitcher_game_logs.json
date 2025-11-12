@@ -1,0 +1,130 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "air_outs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "earned_runs_allowed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "date",
+      "name": "game_date",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_pk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "ground_outs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "hit_by_pitch",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "hits_allowed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_runs_allowed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "innings_pitched",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "bool",
+      "name": "is_starter",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "outs_pitched",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitcher_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "runs_allowed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "strikeouts",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "team_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "walks_allowed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "bool",
+      "name": "was_rfi_allowed",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.pitcher_game_logs",
+  "description": "",
+  "name": "Pitcher Game Logs",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "pitcher_game_logs"
+}

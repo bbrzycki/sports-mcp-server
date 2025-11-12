@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "timestamp",
+      "name": "trend_date",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "baseball: (United States)",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "MLB: (United States)",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "World Series: (United States)",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "World Baseball Classic: (United States)",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "marts_baseball.google_trends_interest",
+  "description": "",
+  "name": "Google Trends Interest",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "marts_baseball",
+  "table": "google_trends_interest"
+}

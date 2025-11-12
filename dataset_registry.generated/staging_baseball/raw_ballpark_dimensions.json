@@ -1,0 +1,200 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "venue_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "venue_name",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "venue_link",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "bool",
+      "name": "is_active",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "address_1",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "city",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "state",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "state_abbrev",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "postal_code",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "country",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "phone",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "latitude",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "longitude",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "azimuth_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "elevation_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "capacity",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "turf_type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "roof_type",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "left_line_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "left_field_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "left_center_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "center_field_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "right_center_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "right_field_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "right_line_ft",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "timezone_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "timezone_offset_utc",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.raw_ballpark_dimensions",
+  "description": "",
+  "name": "Raw Ballpark Dimensions",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "raw_ballpark_dimensions"
+}

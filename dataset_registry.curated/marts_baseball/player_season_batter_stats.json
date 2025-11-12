@@ -1,0 +1,1341 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "player_name",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "player_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "year",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "yearhidden",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "player_age",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "ab",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pa",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "hit",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "single",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "double",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "triple",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_run",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "strikeout",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "walk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "k_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "bb_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "batting_avg",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "slg_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "on_base_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "on_base_plus_slg",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "isolated_power",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "babip",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xslg",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "woba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xwoba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xobp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xiso",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "wobacon",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xwobacon",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "bacon",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xbacon",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xbadiff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "xslgdiff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "wobadiff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "exit_velocity_avg",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "launch_angle_avg",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "sweet_spot_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "barrel",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "barrel_batted_rate",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "solidcontact_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "flareburner_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "poorlyunder_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "poorlytopped_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "poorlyweak_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "hard_hit_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "avg_best_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "avg_hyper_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "z_swing_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "z_swing_miss_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "oz_swing_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "oz_swing_miss_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "oz_contact_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "out_zone_swing_miss",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "out_zone_swing",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "out_zone_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "out_zone",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "meatball_swing_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "meatball_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitch_count_offspeed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitch_count_fastball",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitch_count_breaking",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "pitch_count",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "iz_contact_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "in_zone_swing_miss",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "in_zone_swing",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "in_zone_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "in_zone",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "edge_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "edge",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "whiff_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "swing_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pull_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "straightaway_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "opposite_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "batted_ball",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "f_strike_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "groundballs_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "groundballs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "flyballs_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "flyballs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "linedrives_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "linedrives",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "popups_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "popups",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "avg_swing_length",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "avg_swing_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "blasts_contact",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "blasts_swing",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "squared_up_contact",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "squared_up_swing",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "swords",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "fast_swing_rate",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "attack_angle",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "attack_direction",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "ideal_angle_rate",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "vertical_swing_path",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_pa",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_rbi",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_lob",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_bases",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_total_caught_stealing",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_total_stolen_base",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_ab_scoring",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_ball",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_called_strike",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_catcher_interf",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_foul",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_foul_tip",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_game",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_gnd_into_dp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_gnd_into_tp",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_gnd_rule_double",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_by_pitch",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_ground",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_fly",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_into_play",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_line_drive",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_hit_popup",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_out_fly",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_out_ground",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_out_line_drive",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_out_popup",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_intent_ball",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_intent_walk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_interference",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_pinch_hit",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_pinch_run",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_pitchout",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_played_dh",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_sac_bunt",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_sac_fly",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_swinging_strike",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_caught_stealing_2b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_caught_stealing_3b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_caught_stealing_home",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_defensive_indiff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_interference",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_pickoff_1b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_pickoff_2b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_pickoff_3b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_run",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_stolen_base_2b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_stolen_base_3b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_stolen_base_home",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_ball",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_sacrifices",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_strike",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_swinging_strike",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_total_pitches",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "r_stolen_base_pct",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "r_total_pickoff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_reached_on_error",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_walkoff",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "b_reached_on_int",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_2b_sba_count",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_2b_sba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_2b_sb",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_2b_cs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_3b_sba_count",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_3b_sba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_3b_sb",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "pop_3b_cs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "exchange_2b_3b_sba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "maxeff_arm_2b_3b_sba",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_outs_above_average",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_fieldout_5stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_opp_5stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_5star_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_fieldout_4stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_opp_4stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_4star_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_fieldout_3stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_opp_3stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_3star_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_opp_2stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_2star_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_fieldout_2stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_1star_percent",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_fieldout_1stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_opp_1stars",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "rel_league_reaction_distance",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "rel_league_burst_distance",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "rel_league_routing_distance",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "rel_league_bootup_distance",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "f_bootup_distance",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "n_bolts",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "hp_to_1b",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "sprint_speed",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "season",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "marts_baseball.player_season_batter_stats",
+  "description": "",
+  "name": "Player Season Batter Stats",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "marts_baseball",
+  "table": "player_season_batter_stats"
+}

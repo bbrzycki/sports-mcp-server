@@ -1,0 +1,109 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_pk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "inning_number",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "ordinal_number",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "home_runs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_hits",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_errors",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "home_left_on_base",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "away_runs",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "away_hits",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "away_errors",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "away_left_on_base",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "season",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "month",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "day",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.raw_game_inning_results",
+  "description": "",
+  "name": "Raw Game Inning Results",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "raw_game_inning_results"
+}

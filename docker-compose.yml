@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  sports-mcp-server:
+    build: .
+    image: sports-mcp-server:latest
+    ports:
+      - "9100:9100"
+    environment:
+      PGHOST: ${PGHOST:-warehouse}
+      PGPORT: ${PGPORT:-5432}
+      PGDATABASE: ${PGDATABASE:-sports_dw_dev}
+      PGUSER: ${PGUSER:-sports_admin}
+      PGPASSWORD: ${PGPASSWORD:-sports_admin_password}
+    networks:
+      - default
+
+networks:
+  default:
+    name: sports_net
+    external: true

@@ -1,0 +1,60 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "team_id",
+      "nullable": false,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "season",
+      "nullable": false,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "team_name",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "venue_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "league_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "division_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "abbreviation",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "marts_baseball.dim_team_season",
+  "description": "",
+  "name": "Dim Team Season",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "marts_baseball",
+  "table": "dim_team_season"
+}

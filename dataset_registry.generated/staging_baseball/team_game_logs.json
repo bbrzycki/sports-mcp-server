@@ -1,0 +1,67 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "date",
+      "name": "game_date",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_pk",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "bool",
+      "name": "is_win",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "opponent_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "runs_against",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "runs_for",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "team_id",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "bool",
+      "name": "was_rfi_scored",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.team_game_logs",
+  "description": "",
+  "name": "Team Game Logs",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "team_game_logs"
+}

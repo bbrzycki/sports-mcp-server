@@ -1,0 +1,102 @@
+{
+  "columns": [
+    {
+      "description": "",
+      "dtype": "int8",
+      "name": "game_pk",
+      "nullable": false,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "date",
+      "name": "game_date",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "season",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "home_team_abbr",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "text",
+      "name": "away_team_abbr",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "home_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "away_score",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "home_moneyline",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "away_moneyline",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "home_runline",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "float8",
+      "name": "away_runline",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "home_runline_odds",
+      "nullable": true,
+      "units": null
+    },
+    {
+      "description": "",
+      "dtype": "int4",
+      "name": "away_runline_odds",
+      "nullable": true,
+      "units": null
+    }
+  ],
+  "dataset_id": "staging_baseball.raw_game_odds_sbr",
+  "description": "",
+  "name": "Raw Game Odds Sbr",
+  "primary_key": [],
+  "sample_size": null,
+  "schema": "staging_baseball",
+  "table": "raw_game_odds_sbr"
+}
